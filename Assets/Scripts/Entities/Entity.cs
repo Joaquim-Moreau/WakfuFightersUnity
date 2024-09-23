@@ -16,6 +16,7 @@ public class Entity : MonoBehaviour
     public Side side;
     public bool visibleToOpponent = false;
     private bool _previouslyVisible = true;
+    public bool IsAlive { get; private set; } = true;
     protected HealthBar _healthBar;
     
     
@@ -378,6 +379,7 @@ public class Entity : MonoBehaviour
     protected virtual void Die()
     {
         Debug.Log($"{name} is dead");
+        IsAlive = false;
         gameObject.SetActive(false);
     }
     

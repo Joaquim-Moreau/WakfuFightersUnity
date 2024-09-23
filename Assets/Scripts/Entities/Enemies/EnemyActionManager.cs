@@ -35,119 +35,92 @@ public class EnemyActionManager : EntityActionManager
         if (Self.visibleToOpponent && !_player.IsInvisible())
         {
             CurrentTarget = _player;
+            Destination = CurrentTarget.transform.position;
+            float distanceToTarget = Statics.GetDistance(Self, CurrentTarget);
+            TryToAttack(distanceToTarget);
         }
         else
         {
             CurrentTarget = null;
-        }
-        
-        //
-        ChooseDestination();
-        //
-        Attack();
-        //
-        if (_agent.remainingDistance <= _agent.stoppingDistance)
-        {
-            movementState = MovementState.Stopped;
-        }
-        else
-        {
-            if (Self.CannotWalk())
-            {
-                _agent.SetDestination(transform.position);
-                movementState = MovementState.Stopped;
-            }
-            else
-            {
-                movementState = MovementState.Walking;
-                LookAt(Destination);
-                _agent.speed = Self.GetMoveSpeed();
-            }
+            ChooseDestination();
+            TryToWalk();
         }
         
         _animator.SetBool("walking", movementState == MovementState.Walking);
     }
-    
-    private void Walk()
+
+    private void TryToWalk()
     {
-        Debug.Log($"Walking : {movementState}");
-        if (movementState == MovementState.Stopped)
-        { 
-            if (!PathReset) 
-            { 
-                _agent.ResetPath(); 
-                PathReset = true; 
-            }
-            return;
-        }
-        //if (movementState != MovementState.Walking) return;
-        _agent.SetDestination(Destination);
-        _agent.speed = Self.GetMoveSpeed();
-        PathReset = false;
-        
-        Debug.Log($"Real Distance : {Statics.GetDistance(transform.position, Destination)}");
-        Debug.Log($"Other distance : {_agent.remainingDistance}");
-        if (_agent.remainingDistance <= _agent.stoppingDistance)
+        if (Self.CannotWalk() || _agent.remainingDistance <= _agent.stoppingDistance)
         {
-            //Debug.Log("Stopping");
-            movementState = MovementState.Stopped;
+            Stop();
         }
         else
         {
-            LookAt(Destination);
+            Walk();
+        }
+    }
+    
+    private void Walk()
+    {
+        movementState = MovementState.Walking;
+        _agent.speed = Self.GetMoveSpeed();
+        LookAt(Destination);
+    }
+    
+    private void Stop()
+    {
+        _agent.SetDestination(transform.position); 
+        movementState = MovementState.Stopped;
+    }
+    
+    private void TryToAttack(float distanceToTarget)
+    {
+        if (distanceToTarget <= Self.RangePoints)
+        {
+            Attack();
+        }
+        else
+        {
+            StartCoroutine(UpdateDestination());
+            TryToWalk();
         }
     }
     
     private void Attack()
     {
-        if (CurrentTarget && SpellBuffer is null)
+        Stop();
+        if (Self.GetAutoAttack().IsReady())
         {
-            float distanceToTarget = Statics.GetDistance(Self, CurrentTarget);
-            // TODO : Mettre une touche qui permet d'attaquer l'ennemi visible le plus proche
-            if (distanceToTarget > Self.RangePoints) // TODO : function get Range
-            {
-                movementState = MovementState.Walking;
-            }
-            else
-            {
-                if (Self.GetAutoAttack().IsReady())
-                { 
-                    Self.LaunchAuto(CurrentTarget);
-                }
-
-                _agent.SetDestination(transform.position);
-                movementState = MovementState.Stopped;
-            }
+            Self.LaunchAuto(CurrentTarget);
         }
     }
 
+    private IEnumerator UpdateDestination()
+    {
+        yield return new WaitForSeconds(0.1f);
+        LookAt(Destination);
+        _agent.SetDestination(Destination);
+    }
+    
     private void ChooseDestination()
     {
-        if (CurrentTarget is null)
+        if (_timeBeforeChangingDestination <= 0f) //done with path
         {
-            if (_timeBeforeChangingDestination <= 0f) //done with path
+            if (RandomPoint(transform.position, 5, out Destination)) //pass in our centre point and radius of area
             {
-                Vector3 point;
-                if (RandomPoint(transform.position, 5, out point)) //pass in our centre point and radius of area
-                {
-                    Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
-                    Destination = point;
-                    _agent.SetDestination(Destination);
-                    _timeBeforeChangingDestination = 3f;
-                }
+                Debug.DrawRay(Destination, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
             }
-            _timeBeforeChangingDestination -= Time.deltaTime; 
+            _timeBeforeChangingDestination = 3f;
+            StartCoroutine(UpdateDestination());
         }
-        else
-        { 
-            Destination = CurrentTarget.transform.position;
-            _agent.SetDestination(Destination);
-        }
+        _timeBeforeChangingDestination -= Time.deltaTime; 
     }
     
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
-        Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+        Vector2 randomPoint2D = new Vector2(center.x, center.y) + Random.insideUnitCircle * range;
+        Vector3 randomPoint = new Vector3(randomPoint2D.x, randomPoint2D.y, transform.position.z);
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
         { 

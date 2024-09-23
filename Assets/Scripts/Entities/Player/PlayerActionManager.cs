@@ -9,14 +9,8 @@ using UnityEngine.WSA;
 
 public class PlayerActionManager : EntityActionManager
 {
-    // public
-    public float speed = 4f;
-    
-    // private
     private bool _holdingClick;
     private Animator _animator;
-    //private PlayerControls _playerControls;
-    //private bool _tryingToAuto;
     private NavMeshAgent _agent;
     private SpellManager spellManager;
     
@@ -40,7 +34,7 @@ public class PlayerActionManager : EntityActionManager
             ChooseDestination();
         }
 
-        if (CurrentTarget is null)
+        if (CurrentTarget is null || !CurrentTarget.IsAlive)
         {
             TryToWalk();
         }
@@ -83,7 +77,8 @@ public class PlayerActionManager : EntityActionManager
     
     public void ChooseDestination()
     {
-        // if (movementState == MovementState.Dashing) return;
+        if (movementState == MovementState.Dashing) return;
+        
         Vector3 mousePos = MainCamera.ScreenToWorldPoint(Input.mousePosition);
         CurrentTarget = GetTarget(mousePos);
         if (CurrentTarget && CurrentTarget.side == Self.side) CurrentTarget = null;
@@ -152,7 +147,7 @@ public class PlayerActionManager : EntityActionManager
         }
         else
         {
-            Walk();
+            TryToWalk();
         }
     }
     
