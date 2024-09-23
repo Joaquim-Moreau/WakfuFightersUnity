@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Mascarade
+  m_EditorClassIdentifier: 
+  spellName: 128
+  CoolDown: 60
+  ManaCost: 60
+  affectedSide: 1
+  baseRange: 2
+  modifiableRange: 0
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: 68a84136299989647b74962e56e415fc, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 11400000, guid: 5196e8ae69da2be4faa34541556184e6, type: 2}
+  spellIcon: {fileID: 0}
+  description: "Inflige 100 (+150% Physical Strength) d\xE9gats physiques \xE0 la
+    cible et la repousse."

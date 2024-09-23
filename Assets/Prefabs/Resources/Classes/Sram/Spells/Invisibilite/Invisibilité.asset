@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: "Invisibilit\xE9"
+  m_EditorClassIdentifier: 
+  spellName: 102
+  CoolDown: 30
+  ManaCost: 50
+  affectedSide: 0
+  baseRange: 0
+  modifiableRange: 0
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: 4f6a43515757a704d957a524d1578042, type: 2}
+  - {fileID: 11400000, guid: 3d5d67ff0970c324fa1a4e897deb0bbd, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 21300000, guid: b066c869b51f9384fa8ac9cce36b4648, type: 3}
+  description: "Rend le caster invisible et augmente sa vitesse de d\xE9placement
+    de 30% pendant 3s"

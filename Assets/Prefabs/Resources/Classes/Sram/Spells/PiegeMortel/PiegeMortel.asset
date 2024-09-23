@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: PiegeMortel
+  m_EditorClassIdentifier: 
+  spellName: 104
+  CoolDown: 5
+  ManaCost: 30
+  affectedSide: 1
+  baseRange: 5
+  modifiableRange: 0
+  targeted: 0
+  Effects:
+  - {fileID: 11400000, guid: af69616486674ec41a034245e5537bb3, type: 2}
+  - {fileID: 11400000, guid: e3803ec7ccd4dfa429de45e5c13bd81d, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 21300000, guid: 0b55b49bf61a0e14ab542ec69fe02786, type: 3}
+  description: "Pose un pi\xE8ge au sol qui devient apr\xE8s 2.5s, le pi\xE8ge inflige
+    10 (+40% Physical Strength)(+20% Magical Power) d\xE9gats physique ainsin qu'un
+    poison pendant 3 secondes"

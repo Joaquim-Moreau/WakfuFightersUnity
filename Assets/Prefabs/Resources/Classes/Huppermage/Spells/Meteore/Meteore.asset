@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Meteore
+  m_EditorClassIdentifier: 
+  spellName: 88
+  CoolDown: 3
+  ManaCost: 0
+  affectedSide: 1
+  baseRange: 6
+  modifiableRange: 0
+  targeted: 0
+  newEffects:
+  - {fileID: 11400000, guid: 752bee6ee7bc581459efa6621a71d78d, type: 2}
+  newEffectsOnCaster:
+  - {fileID: 11400000, guid: 5e32ef944b6966743a132eb01c51db49, type: 2}
+  newPushEffect: {fileID: 0}

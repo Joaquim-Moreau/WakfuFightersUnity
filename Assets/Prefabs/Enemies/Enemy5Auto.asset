@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Enemy5Auto
+  m_EditorClassIdentifier: 
+  spellName: 133
+  CoolDown: 0
+  ManaCost: 0
+  affectedSide: 0
+  baseRange: 0
+  modifiableRange: 1
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: 621140004d3ff6242a6aa4b3d37c5106, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 
