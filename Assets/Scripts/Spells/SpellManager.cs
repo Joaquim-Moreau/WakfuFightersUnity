@@ -233,7 +233,7 @@ public enum SpellName
     Fouet,
     SuperBonbon,
     SouffleDudragon,
-    Chimere,
+    EcaillesArdentes,
     
     // Ouginak
     OugiAutoAttack,
@@ -324,5 +324,12 @@ public enum SpellName
     // Boss
     BossAuto,
     BossSpell,
-    BossTeleport
+    BossTeleport,
+    
+    // Invocations
+    PoupeeExplode,
+    DragonBreath,
+    BombeExplode,
+    TourelleShot,
+    TonneauAura
 }

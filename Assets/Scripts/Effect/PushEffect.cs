@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Push Effect", menuName = "Effect/Push Effect")]
@@ -9,7 +10,6 @@ public class PushEffect : DurableEffect
     [SerializeField] private float _distance;
 
     public float PUSH_SPEED { get; private set; } = 6f;
-    private int BASE_PUSH_DMG = 25;
     private Vector3 _direction;
     //private Entity _target;
     
@@ -60,8 +60,8 @@ public class PushEffect : DurableEffect
     public override void Prepare(Entity caster, Entity target)
     {
         Caster = caster;
-        PUSH_SPEED = 8f;
-        DurationTimer = _distance / PUSH_SPEED;
+        DurationTimer = Mathf.Abs(_distance) / 8f;
+        PUSH_SPEED = 8f * Mathf.Sign(_distance);
     }
     
     public override void Apply(Entity target)
@@ -83,16 +83,16 @@ public class PushEffect : DurableEffect
     public void ApplyPushDamage(Entity target)
     {
         // TODO : apply stun for 0.5s
-        int pushDmg = BASE_PUSH_DMG + Caster.GetPushDmg();
-        target.TakeDmg(pushDmg, DmgType.True);
+        //int pushDmg = BASE_PUSH_DMG + Caster.GetPushDmg();
+        //target.TakeDmg(pushDmg, DmgType.True);
         Remove(target);
     }
 
     public void ApplySecondaryPushDamage(Entity target)
     {
         // TODO : apply stun for 0.5s
-        if (Caster.side == target.side) return;
-        target.TakeDmg(BASE_PUSH_DMG, DmgType.True);
+        //if (Caster.side == target.side) return;
+        //target.TakeDmg(BASE_PUSH_DMG, DmgType.True);
     }
     
     public override void Remove(Entity target)

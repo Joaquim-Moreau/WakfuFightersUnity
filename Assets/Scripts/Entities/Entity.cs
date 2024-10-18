@@ -226,7 +226,7 @@ public class Entity : MonoBehaviour
     protected void UpdateAirBorne()
     {
         if (currentPush is null) return;
-
+        
         if (currentPush.IsExpired())
         {
             currentPush.Remove(this);
@@ -287,7 +287,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public float TakeDmg(float damage, DmgType type)
+    public virtual float TakeDmg(float damage, DmgType type)
     {
         float finalDmg = 0;
         switch (type)
@@ -441,6 +441,11 @@ public class Entity : MonoBehaviour
     }
 
     // Getters
+    public int GetRange()
+    {
+        return (int)RangePoints + BonusRange;
+    }
+    
     public int GetPhyDmg()
     {
         return phyDmg + BonusPhyDmg;

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Embuscade
+  m_EditorClassIdentifier: 
+  spellName: 113
+  CoolDown: 30
+  ManaCost: 50
+  affectedSide: 1
+  baseRange: 5
+  modifiableRange: 0
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: df57b84fdc899cc489881c54a39c7707, type: 2}
+  - {fileID: 11400000, guid: 91c61f84bbbce084e80761e0eec32ecd, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

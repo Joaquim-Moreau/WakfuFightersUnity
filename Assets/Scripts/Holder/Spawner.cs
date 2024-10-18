@@ -5,18 +5,11 @@ using UnityEngine;
 public class Spawner : Spell
 {
     [SerializeField] private SummonType summonType;
+    [SerializeField] private float delay;
     private bool _summonDone;
     
     public override void Init(Entity caster, Vector3 launchPosition)
     {
-        Initialize(summonType, caster, launchPosition);
-    }
-    
-    public override void Init(Entity caster, Entity target) {}
-    
-    public void Initialize(SummonType type, Entity caster, Vector3 launchPosition)
-    {
-        summonType = type;
         Caster = caster;
         transform.position = launchPosition;
         _summonDone = false;
@@ -24,6 +17,8 @@ public class Spawner : Spell
         StopAllCoroutines();
         StartCoroutine(Summon());
     }
+    
+    public override void Init(Entity caster, Entity target) {}
 
     private void Update()
     {
@@ -35,7 +30,7 @@ public class Spawner : Spell
 
     private IEnumerator Summon()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(delay);
         GameObject summon = ObjectPooler.CreateInvocation(summonType, transform.position);
         _summonDone = true;
     }

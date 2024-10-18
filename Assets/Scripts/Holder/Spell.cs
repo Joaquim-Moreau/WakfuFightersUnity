@@ -7,7 +7,10 @@ public abstract class Spell : MonoBehaviour
     public float lifeTime;
     protected Entity Caster;
 
+    [SerializeField] protected float delayBeforeSpawn;
     [SerializeField] protected SpellData spellData;
+
+    protected bool ReadyToApplyEffects = false;
     void OnDisable()
     {
         StopAllCoroutines();
@@ -15,7 +18,7 @@ public abstract class Spell : MonoBehaviour
     
     protected IEnumerator ManageLifeTime()
     {
-        yield return new WaitForSeconds(lifeTime);
+        yield return new WaitForSeconds(lifeTime + delayBeforeSpawn);
         gameObject.SetActive(false);
     }
     
@@ -23,6 +26,12 @@ public abstract class Spell : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         gameObject.SetActive(false);
+    }
+
+    protected IEnumerator ManageDelay()
+    {
+        yield return new WaitForSeconds(delayBeforeSpawn);
+        ReadyToApplyEffects = true;
     }
     
     public abstract void Init(Entity caster, Vector3 launchPosition);

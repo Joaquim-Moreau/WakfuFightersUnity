@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Bluff
+  m_EditorClassIdentifier: 
+  spellName: 9
+  CoolDown: 8
+  ManaCost: 0
+  affectedSide: 1
+  baseRange: 5
+  modifiableRange: 0
+  targeted: 0
+  Effects:
+  - {fileID: 11400000, guid: e3fefa51eea010447826e55a97f661fe, type: 2}
+  - {fileID: 11400000, guid: bc303533085eeb94caf301db42f4124e, type: 2}
+  EffectsOnCaster:
+  - {fileID: 11400000, guid: aaa34708fd7be4447a8b1cfdc50264f9, type: 2}
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

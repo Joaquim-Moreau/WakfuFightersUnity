@@ -250,7 +250,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 906838416, guid: e140f14cf1b6d834487e6b63b8a82c2c, type: 3}
+  m_Sprite: {fileID: 1837880589, guid: 458da8cc37a431c41b9ed3f33c4bb9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,7 +333,7 @@ Animator:
   m_GameObject: {fileID: 8873586142836702786}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2dc11f5b02f86428739425582284b5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 56ec683da1109df4d8b2c7630b42eaa9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -357,7 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
-  speed: 4
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,9 +535,12 @@ MonoBehaviour:
   <maxHP>k__BackingField: 1000
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
+  hpRegen: 6
+  manaRegen: 6
   phyDmg: 0
   pushDmg: 0
   magDmg: 0
+  LifeSteal: 0
   AttackSpeed: 1
   phyRes: 0
   magRes: 0
@@ -569,12 +571,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbd0400b72eafc47a1cacb35f6b263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoAttack: {fileID: 0}
-  SpaceSpell: []
-  ASpell: []
-  ZSpell: []
-  ESpell: []
-  RSpell: []
+  AutoAttack: {fileID: 11400000, guid: 606489ade3e8c794b9fb9986d4c4f6d8, type: 2}
+  SpaceSpell:
+  - {fileID: 11400000, guid: c4b7bc1bf83c2024bb105355d3fbd08f, type: 2}
+  ASpell:
+  - {fileID: 11400000, guid: d66822de8c1e62a42b34f488ff2a32af, type: 2}
+  ZSpell:
+  - {fileID: 11400000, guid: c0cb7b416f7cbca459722e8df58c43f5, type: 2}
+  ESpell:
+  - {fileID: 11400000, guid: 94bc6e88a1fae4c44b08d41faae933d8, type: 2}
+  RSpell:
+  - {fileID: 11400000, guid: 849b29dae6ceb6f428d91943f68fde21, type: 2}
 --- !u!1001 &1566477031506365151
 PrefabInstance:
   m_ObjectHideFlags: 0

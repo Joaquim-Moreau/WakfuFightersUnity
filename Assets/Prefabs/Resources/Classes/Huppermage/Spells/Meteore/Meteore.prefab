@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: 5d2361a506d4ba646bd8f48bf82ad0c5, type: 2}
-  speed: 8
+  speed: 15
   targetLimit: 1

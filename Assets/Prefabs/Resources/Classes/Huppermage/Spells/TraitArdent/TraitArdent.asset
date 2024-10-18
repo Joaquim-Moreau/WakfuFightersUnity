@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
   m_Name: TraitArdent
   m_EditorClassIdentifier: 
-  spellName: 97
-  CoolDown: 3
+  spellName: 56
+  CoolDown: 6
   ManaCost: 15
   affectedSide: 1
   baseRange: 3
   modifiableRange: 0
   targeted: 0
-  newEffects:
+  Effects:
   - {fileID: 11400000, guid: 3c2c9a152ca88e747bdcf56c5158b944, type: 2}
-  newEffectsOnCaster: []
-  newPushEffect: {fileID: 0}
+  - {fileID: 11400000, guid: a07c3675b720a984584a450094b8da4e, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

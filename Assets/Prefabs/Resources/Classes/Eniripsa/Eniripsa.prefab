@@ -250,7 +250,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 906838416, guid: e140f14cf1b6d834487e6b63b8a82c2c, type: 3}
+  m_Sprite: {fileID: -1755608912, guid: 80f943c1370c6d040ab679bf1c0b7e8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,7 +333,7 @@ Animator:
   m_GameObject: {fileID: 8873586142836702786}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2dc11f5b02f86428739425582284b5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0d5c7e67694dc8b4dade8e83482a00da, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -357,7 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
-  speed: 4
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,14 +535,17 @@ MonoBehaviour:
   <maxHP>k__BackingField: 1000
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
-  phyDmg: 0
+  hpRegen: 6
+  manaRegen: 6
+  phyDmg: 50
   pushDmg: 0
-  magDmg: 0
+  magDmg: 100
+  LifeSteal: 0
   AttackSpeed: 1
-  phyRes: 0
-  magRes: 0
+  phyRes: 30
+  magRes: 30
   moveSpeed: 4
-  RangePoints: 10
+  RangePoints: 7
   spellBook: {fileID: 0}
 --- !u!114 &62165812256914210
 MonoBehaviour:
@@ -569,12 +571,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbd0400b72eafc47a1cacb35f6b263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoAttack: {fileID: 0}
-  SpaceSpell: []
-  ASpell: []
-  ZSpell: []
-  ESpell: []
-  RSpell: []
+  AutoAttack: {fileID: 11400000, guid: 8b903d2279a41e346a68b2b8aa5b12a9, type: 2}
+  SpaceSpell:
+  - {fileID: 11400000, guid: b83d11fc2ffc0344399980be37c9af58, type: 2}
+  ASpell:
+  - {fileID: 11400000, guid: cda5931f740672b4eb184b297961addb, type: 2}
+  ZSpell:
+  - {fileID: 11400000, guid: c18f7538551c57d419d0fbfbe323fb13, type: 2}
+  ESpell:
+  - {fileID: 11400000, guid: 29f2f9961943db24a93984303ae81d02, type: 2}
+  RSpell:
+  - {fileID: 11400000, guid: a199879f406f338449bdf11766bc9e80, type: 2}
 --- !u!1001 &1566477031506365151
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: MotVampique
+  m_EditorClassIdentifier: 
+  spellName: 23
+  CoolDown: 0
+  ManaCost: 0
+  affectedSide: 1
+  baseRange: 7
+  modifiableRange: 0
+  targeted: 0
+  Effects:
+  - {fileID: 11400000, guid: 6834c744f1192b04e90b882c957a9051, type: 2}
+  EffectsOnCaster:
+  - {fileID: 11400000, guid: d3580f731179ec34983056c70e88b6f2, type: 2}
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

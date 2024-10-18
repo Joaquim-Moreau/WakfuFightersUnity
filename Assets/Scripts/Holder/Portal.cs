@@ -2,12 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Portal : Spell
 {
     public float closingDuration;
     
-    private Camera _mainCamera;
     private Animator _animator;
     private static readonly int AnimatorID = Animator.StringToHash("opened");
     
@@ -18,12 +18,6 @@ public class Portal : Spell
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-    }
-
-    void OnEnable()
-    {
-        _mainCamera = MainSceneManager.instance.mainCamera;
-        transform.parent = GameObject.FindGameObjectWithTag("SpellDrawer").transform;
     }
 
     private void OnDisable()
@@ -39,7 +33,11 @@ public class Portal : Spell
     public override void Init(Entity caster, Vector3 launchPosition)
     {
         _isOpen = true;
-        transform.position = launchPosition;
+        
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(launchPosition, out hit, 2.0f, NavMesh.AllAreas)) {
+            transform.position = hit.position;
+        }
 
         if (_activePortal1 == null)
         {
@@ -94,7 +92,7 @@ public class Portal : Spell
         
         if (other.CompareTag("Entity") || other.CompareTag("Player"))
         {
-            TeleportToOtherPortal(other.transform);
+            TeleportEntityToOtherPortal(other.transform);
             StartCoroutine(_activePortal1.ClosingPortalTemporarily(closingDuration));
             StartCoroutine(_activePortal2.ClosingPortalTemporarily(closingDuration));
         }
@@ -125,15 +123,28 @@ public class Portal : Spell
         OpenPortal();
     }
 
+    private void TeleportEntityToOtherPortal(Transform entity)
+    {
+        entity.GetComponent<NavMeshAgent>().enabled = false;
+        TeleportToOtherPortal(entity);
+        entity.GetComponent<NavMeshAgent>().enabled = true;
+    }
+
     private void TeleportToOtherPortal(Transform entity)
     {
         if (this == _activePortal1)
         {
-            entity.position = _activePortal2.transform.position;
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(_activePortal2.transform.position, out hit, 2.0f, NavMesh.AllAreas)) {
+                entity.position = hit.position;
+            }
         }
         else if (this == _activePortal2)
         {
-            entity.position = _activePortal1.transform.position;
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(_activePortal1.transform.position, out hit, 2.0f, NavMesh.AllAreas)) {
+                entity.position = hit.position;
+            }
         }
     }
 }

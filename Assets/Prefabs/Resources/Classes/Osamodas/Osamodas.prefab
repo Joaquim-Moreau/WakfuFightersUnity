@@ -250,7 +250,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 906838416, guid: e140f14cf1b6d834487e6b63b8a82c2c, type: 3}
+  m_Sprite: {fileID: 1367406344, guid: 2ffc2c551c9ed1745b802923803635a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,7 +333,7 @@ Animator:
   m_GameObject: {fileID: 8873586142836702786}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2dc11f5b02f86428739425582284b5, type: 2}
+  m_Controller: {fileID: 9100000, guid: b16782d5bed7c284b82f8db13cbeff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -357,7 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
-  speed: 4
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,17 +532,20 @@ MonoBehaviour:
   side: 0
   visibleToOpponent: 0
   <ShieldPoints>k__BackingField: 0
-  <maxHP>k__BackingField: 1000
+  <maxHP>k__BackingField: 3000
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
-  phyDmg: 0
-  pushDmg: 0
-  magDmg: 0
+  hpRegen: 6
+  manaRegen: 6
+  phyDmg: 100
+  pushDmg: 100
+  magDmg: 100
+  LifeSteal: 0
   AttackSpeed: 1
-  phyRes: 0
-  magRes: 0
+  phyRes: 35
+  magRes: 35
   moveSpeed: 4
-  RangePoints: 10
+  RangePoints: 2
   spellBook: {fileID: 0}
 --- !u!114 &62165812256914210
 MonoBehaviour:
@@ -569,12 +571,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbd0400b72eafc47a1cacb35f6b263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoAttack: {fileID: 0}
-  SpaceSpell: []
-  ASpell: []
-  ZSpell: []
-  ESpell: []
-  RSpell: []
+  AutoAttack: {fileID: 11400000, guid: 92cd3cb0f4d52d24d96e1649f7805958, type: 2}
+  SpaceSpell:
+  - {fileID: 11400000, guid: e878fb0bba61f4d48b5a655bf9dfb20c, type: 2}
+  ASpell:
+  - {fileID: 11400000, guid: 0ef25d9811dc27144accadcee756e17f, type: 2}
+  ZSpell:
+  - {fileID: 11400000, guid: cacb8671312fbf1428b15e9abf0f106d, type: 2}
+  ESpell:
+  - {fileID: 11400000, guid: 2fad1483ca65b0c43ae71af81b753ef6, type: 2}
+  RSpell:
+  - {fileID: 11400000, guid: c76d6323c42298d449cf4224169c81af, type: 2}
 --- !u!1001 &1566477031506365151
 PrefabInstance:
   m_ObjectHideFlags: 0

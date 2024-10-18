@@ -40,6 +40,7 @@ public class PlayerActionManager : EntityActionManager
         }
         else
         {
+            Destination = CurrentTarget.transform.position;
             _agent.SetDestination(CurrentTarget.transform.position);
             float distanceToTarget = Statics.GetDistance(Self, CurrentTarget);
             
@@ -106,6 +107,7 @@ public class PlayerActionManager : EntityActionManager
         if (targetCollider.CompareTag("Entity") || targetCollider.CompareTag("Player"))
         {
             var target = targetCollider.GetComponent<Entity>();
+            
             if (target.visibleToOpponent || target == Self)
             {
                 return target;
@@ -141,7 +143,7 @@ public class PlayerActionManager : EntityActionManager
 
     private void TryToAttack(float distanceToTarget)
     {
-        if (distanceToTarget <= Self.RangePoints)
+        if (distanceToTarget <= Self.GetRange())
         {
             Attack();
         }

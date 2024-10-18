@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
   m_Name: Meteore
   m_EditorClassIdentifier: 
-  spellName: 88
-  CoolDown: 3
-  ManaCost: 0
+  spellName: 47
+  CoolDown: 4
+  ManaCost: 25
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
   targeted: 0
-  newEffects:
+  Effects:
   - {fileID: 11400000, guid: 752bee6ee7bc581459efa6621a71d78d, type: 2}
-  newEffectsOnCaster:
-  - {fileID: 11400000, guid: 5e32ef944b6966743a132eb01c51db49, type: 2}
-  newPushEffect: {fileID: 0}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

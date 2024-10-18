@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
   m_Name: Glacier
   m_EditorClassIdentifier: 
-  spellName: 92
-  CoolDown: 3
-  ManaCost: 15
+  spellName: 51
+  CoolDown: 10
+  ManaCost: 25
   affectedSide: 2
   baseRange: 0
   modifiableRange: 0
   targeted: 1
-  newEffects:
+  Effects:
   - {fileID: 11400000, guid: d54cfd4941e3c144d9365040718193de, type: 2}
-  newEffectsOnCaster: []
-  newPushEffect: {fileID: 0}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

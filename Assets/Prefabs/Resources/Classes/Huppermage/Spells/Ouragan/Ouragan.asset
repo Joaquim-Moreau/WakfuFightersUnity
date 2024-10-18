@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
   m_Name: Ouragan
   m_EditorClassIdentifier: 
-  spellName: 96
+  spellName: 55
   CoolDown: 3
   ManaCost: 15
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
   targeted: 1
-  newEffects:
+  Effects:
   - {fileID: 11400000, guid: e6c7116ae184ee1479c5241e3a97667a, type: 2}
-  newEffectsOnCaster: []
-  newPushEffect: {fileID: 0}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 11400000, guid: 49f7deace6cb2034193faab471fcd6b0, type: 2}
+  spellIcon: {fileID: 0}
+  description: 

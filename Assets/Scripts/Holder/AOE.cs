@@ -7,9 +7,11 @@ using UnityEngine.Serialization;
 public class AOE : Holder
 {
     [SerializeField] private float refreshPeriod;
-    
+    [SerializeField] private bool changingDirection = true;
     protected float _refresh;
     protected bool _touchingEntity;
+    
+    
     
     public override void Init(Entity caster, Vector3 launchPosition)
     {
@@ -17,16 +19,19 @@ public class AOE : Holder
         transform.position = launchPosition;
         _refresh = 0f;
         _touchingEntity = false;
-        InitDirection(caster);
+        if (changingDirection) InitDirection(caster);
         RotateObject();
         
         StopAllCoroutines();
+        StartCoroutine(ManageDelay());
         StartCoroutine(ManageLifeTime());
     }
     
     // Update is called once per frame
     void Update()
     {
+        if (!ReadyToApplyEffects) return;
+        
         if (_refresh > 0f)
         {
             _refresh -= Time.deltaTime;
@@ -40,6 +45,8 @@ public class AOE : Holder
     
     protected virtual void OnTriggerStay2D(Collider2D other)
     {
+        if (!ReadyToApplyEffects) return;
+        
         if (other.CompareTag("Entity") || other.CompareTag("Player"))
         {
             Entity target = other.GetComponent<Entity>();

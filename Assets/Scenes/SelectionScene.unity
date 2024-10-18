@@ -3233,18 +3233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53b5a40dfa9db349bd2b4aad649d669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstAButton: {fileID: 0}
-  secondAButton: {fileID: 0}
-  thirdAButton: {fileID: 0}
-  firstZButton: {fileID: 0}
-  secondZButton: {fileID: 0}
-  thirdZButton: {fileID: 0}
-  firstEButton: {fileID: 0}
-  secondEButton: {fileID: 0}
-  thirdEButton: {fileID: 0}
-  firstRButton: {fileID: 0}
-  secondRButton: {fileID: 0}
-  thirdRButton: {fileID: 0}
 --- !u!4 &1918466619
 Transform:
   m_ObjectHideFlags: 0

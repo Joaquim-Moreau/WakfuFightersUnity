@@ -70,13 +70,14 @@ public class EnemyActionManager : EntityActionManager
     
     private void Stop()
     {
+        _agent.ResetPath();
         _agent.SetDestination(transform.position); 
         movementState = MovementState.Stopped;
     }
     
     private void TryToAttack(float distanceToTarget)
     {
-        if (distanceToTarget <= Self.RangePoints)
+        if (distanceToTarget <= Self.GetRange())
         {
             Attack();
         }
@@ -99,8 +100,11 @@ public class EnemyActionManager : EntityActionManager
     private IEnumerator UpdateDestination()
     {
         yield return new WaitForSeconds(0.1f);
-        LookAt(Destination);
-        _agent.SetDestination(Destination);
+        if (!Self.CannotWalk())
+        {
+            LookAt(Destination);
+            _agent.SetDestination(Destination);
+        }
     }
     
     private void ChooseDestination()

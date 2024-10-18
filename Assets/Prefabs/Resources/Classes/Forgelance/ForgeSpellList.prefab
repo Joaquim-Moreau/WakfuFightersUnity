@@ -44,4 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df308934dff02147ba83c73353bc789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pools: []
+  pools:
+  - name: 39
+    prefab: {fileID: 9002809084523510774, guid: 188581cc8e369c14baa56e321695d271, type: 3}
+    size: 3
+  - name: 40
+    prefab: {fileID: 9002809084523510774, guid: 3954a96d2e5bbab4ab739d6d80b83e55, type: 3}
+    size: 1
+  - name: 41
+    prefab: {fileID: 9002809084523510774, guid: 3a5a39794449f074da036b0d498ba2c7, type: 3}
+    size: 1
+  - name: 42
+    prefab: {fileID: 9002809084523510774, guid: ef2847179b38a8b488e2f58238d550b0, type: 3}
+    size: 1
+  - name: 43
+    prefab: {fileID: 9002809084523510774, guid: 61090ae30168d6e468cfa610b406842f, type: 3}
+    size: 1
+  - name: 44
+    prefab: {fileID: 9002809084523510774, guid: 2186045e5a4849b4188dc4c7293b194c, type: 3}
+    size: 1

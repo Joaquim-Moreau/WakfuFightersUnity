@@ -15,6 +15,11 @@ public class PointAndClick : Holder
         _carrier = target;
         _refresh = 0f;
         transform.position = _carrier.transform.position;
+        if (caster != target)
+        {
+            InitDirection(caster);
+            RotateObject();
+        }
         
         StopAllCoroutines();
         StartCoroutine(ManageLifeTime());

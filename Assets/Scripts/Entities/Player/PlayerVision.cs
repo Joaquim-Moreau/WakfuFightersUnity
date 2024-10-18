@@ -27,7 +27,9 @@ public class PlayerVision : MonoBehaviour
     {
         if (other.CompareTag("Entity"))
         {
-            other.GetComponent<Entity>().visibleToOpponent = false;
+            var entity = other.GetComponent<Entity>();
+            if (entity.side == Side.Green) return;
+            entity.visibleToOpponent = false;
         }
     }
 }

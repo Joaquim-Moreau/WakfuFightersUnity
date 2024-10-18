@@ -45,45 +45,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - name: 87
+  - name: 45
+    prefab: {fileID: 9002809084523510774, guid: 41cb4e0e836464140bd8165f109dfdd5, type: 3}
+    size: 5
+  - name: 46
     prefab: {fileID: 9002809084523510774, guid: ae43172e49fbcc846b9c80e60cb8932e, type: 3}
     size: 1
-  - name: 88
+  - name: 47
     prefab: {fileID: 9002809084523510774, guid: d179122b58ea4864db6de9307c1b190a, type: 3}
-    size: 2
-  - name: 89
-    prefab: {fileID: 9002809084523510774, guid: 57585afe0e7a9d043a561f46d0ad3bf0, type: 3}
-    size: 2
-  - name: 90
-    prefab: {fileID: 9002809084523510774, guid: ce063dc0a4157b24e8c0b233207ac94e, type: 3}
-    size: 2
-  - name: 91
-    prefab: {fileID: 9002809084523510774, guid: 82c8dc63c76502f44964ac8144ed683a, type: 3}
-    size: 2
-  - name: 92
+    size: 1
+  - name: 51
     prefab: {fileID: 9002809084523510774, guid: f4326adce01e4924f921d2ced0b85a64, type: 3}
-    size: 2
-  - name: 93
-    prefab: {fileID: 9002809084523510774, guid: 47e2f7375a8d8e045b63d767e3f8e28a, type: 3}
-    size: 2
-  - name: 94
-    prefab: {fileID: 9002809084523510774, guid: e48b5fb6fa234e042ac1150cfdfaf91b, type: 3}
-    size: 2
-  - name: 95
-    prefab: {fileID: 9002809084523510774, guid: df81e1ffa756bf7418fbc7ee601efd8c, type: 3}
-    size: 2
-  - name: 96
+    size: 1
+  - name: 55
     prefab: {fileID: 9002809084523510774, guid: b674e1966b43b344ebba0d1ff9a2da8b, type: 3}
-    size: 2
-  - name: 97
-    prefab: {fileID: 9002809084523510774, guid: fb5fc0b34f3b0e74c9663326d4aa5b8d, type: 3}
-    size: 2
-  - name: 98
-    prefab: {fileID: 9002809084523510774, guid: 28bb2106956c94241803639e18078901, type: 3}
-    size: 2
-  - name: 99
-    prefab: {fileID: 9002809084523510774, guid: fc27c2143c884d8418ea57d238f936bb, type: 3}
-    size: 2
-  - name: 86
-    prefab: {fileID: 9002809084523510774, guid: 41cb4e0e836464140bd8165f109dfdd5, type: 3}
-    size: 2
+    size: 1
+  - name: 56
+    prefab: {fileID: 9002809084523510774, guid: 08aebcb11107f98429cc234cfce3fd4d, type: 3}
+    size: 1

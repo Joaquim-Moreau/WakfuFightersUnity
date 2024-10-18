@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: Rekop 2
+  m_EditorClassIdentifier: 
+  spellName: 13
+  CoolDown: 60
+  ManaCost: 0
+  affectedSide: 1
+  baseRange: 4
+  modifiableRange: 0
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: f57eecb41e057914d919da8ce3798e31, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

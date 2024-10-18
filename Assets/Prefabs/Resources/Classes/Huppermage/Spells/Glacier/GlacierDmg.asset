@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: GlacierDmg
   m_EditorClassIdentifier: 
   AffectedSide: 1
-  Delay: 0
   cleanAble: 0
   _baseDmg: 30
   _phyRatio: 0
-  _magRatio: 0.5
+  _magRatio: 1
   _baseLifeSteal: 50
   _type: 1
   _canCrit: 0

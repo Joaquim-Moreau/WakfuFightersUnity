@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3137498994128554567}
   - component: {fileID: 7848204485227012732}
   - component: {fileID: 6759427067341331062}
-  - component: {fileID: 7710947648849906333}
   - component: {fileID: 5421397302706977887}
+  - component: {fileID: 7710947648849906333}
   - component: {fileID: 2089776489252996368}
   - component: {fileID: 183015003440694072}
   - component: {fileID: 1274476655226663976}
@@ -212,19 +212,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7710947648849906333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8533288269921621545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cfc047422f52418b8b02cb54bfb5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementState: 0
 --- !u!195 &5421397302706977887
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -247,6 +234,19 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
+--- !u!114 &7710947648849906333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8533288269921621545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cfc047422f52418b8b02cb54bfb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementState: 0
 --- !u!114 &2089776489252996368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,9 +265,12 @@ MonoBehaviour:
   <maxHP>k__BackingField: 1000
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
+  hpRegen: 6
+  manaRegen: 6
   phyDmg: 50
   pushDmg: 50
   magDmg: 50
+  LifeSteal: 0
   AttackSpeed: 1
   phyRes: 30
   magRes: 30

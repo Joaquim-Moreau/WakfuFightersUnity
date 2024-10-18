@@ -9,30 +9,6 @@ using TMPro;
 
 public class SelectionScreenManager : MonoBehaviour
 {
-    [SerializeField] private GameObject firstAButton;
-    [SerializeField] private GameObject secondAButton;
-    [SerializeField] private GameObject thirdAButton;
-    [SerializeField] private GameObject firstZButton;
-    [SerializeField] private GameObject secondZButton;
-    [SerializeField] private GameObject thirdZButton;
-    [SerializeField] private GameObject firstEButton;
-    [SerializeField] private GameObject secondEButton;
-    [SerializeField] private GameObject thirdEButton;
-    [SerializeField] private GameObject firstRButton;
-    [SerializeField] private GameObject secondRButton;
-    [SerializeField] private GameObject thirdRButton;
-
-    private Image[] _imagesA;
-    private Image[] _imagesZ;
-    private Image[] _imagesE;
-    private Image[] _imagesR;
-
-    
-    private TextMeshProUGUI[] _textA;
-    private TextMeshProUGUI[] _textZ;
-    private TextMeshProUGUI[] _textE;
-    private TextMeshProUGUI[] _textR;
-    
     private void Awake()
     {
         SelectionScreenData.ChosenClass = PlayerCLass.Cra;

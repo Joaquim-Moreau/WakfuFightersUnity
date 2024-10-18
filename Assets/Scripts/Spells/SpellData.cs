@@ -42,7 +42,7 @@ public class SpellData : ScriptableObject
         Caster = caster;
         if (modifiableRange)
         {
-            ActualRange = baseRange + Caster.RangePoints;
+            ActualRange = baseRange + Caster.GetRange();
         }
         else
         {

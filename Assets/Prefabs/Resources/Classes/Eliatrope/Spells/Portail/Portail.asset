@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Portail
   m_EditorClassIdentifier: 
   spellName: 16
-  CoolDown: 4
+  CoolDown: 1
   ManaCost: 20
   affectedSide: 2
   baseRange: 5

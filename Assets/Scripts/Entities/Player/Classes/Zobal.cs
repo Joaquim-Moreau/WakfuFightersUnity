@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class Zobal : Player
 {
+    [SerializeField] private Image currentMaskImage;
+
+    [SerializeField] private Sprite psychopath;
+    [SerializeField] private Sprite audacious;
+    [SerializeField] private Sprite coward;
+    
     private enum Masque
     {
         Intrepide,
@@ -117,16 +125,19 @@ public class Zobal : Player
                 if (_currentMask == Masque.Intrepide)
                 {
                     _currentMask = Masque.Psycopathe;
+                    currentMaskImage.sprite = psychopath;
                 }
                 else
                 {
                     if (_currentMask == Masque.Psycopathe)
                     {
                         _currentMask = Masque.Pleutre;
+                        currentMaskImage.sprite = coward;
                     }
                     else
                     {
                         _currentMask = Masque.Intrepide;
+                        currentMaskImage.sprite = audacious;
                     }
                 }
                 break;

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7036919945736696434}
   - component: {fileID: 4259444398027509848}
   - component: {fileID: -650234974013245117}
+  - component: {fileID: 4655381825662193169}
+  - component: {fileID: 919829606912588848}
   m_Layer: 0
   m_Name: Seed
   m_TagString: Entity
@@ -80,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.764151, b: 0.034416366, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2ee41f2f6648faa45bfae589a4103e62, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,7 +101,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5841608068626797449}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -168,15 +170,21 @@ MonoBehaviour:
   side: 0
   visibleToOpponent: 0
   <ShieldPoints>k__BackingField: 0
-  maxHP: 1000
+  <maxHP>k__BackingField: 1000
   <hp>k__BackingField: 0
+  <maxMana>k__BackingField: 180
+  hpRegen: 6
+  manaRegen: 6
   phyDmg: 0
   pushDmg: 0
   magDmg: 0
+  LifeSteal: 0
   AttackSpeed: 1
   phyRes: 0
   magRes: 0
+  moveSpeed: 0
   RangePoints: 10
+  spellBook: {fileID: 0}
 --- !u!95 &4259444398027509848
 Animator:
   serializedVersion: 5
@@ -211,6 +219,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
+--- !u!114 &4655381825662193169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841608068626797449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618e7d9cccdbec947a1a2b4516055352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &919829606912588848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841608068626797449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbd0400b72eafc47a1cacb35f6b263d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoAttack: {fileID: 0}
+  SpaceSpell: []
+  ASpell: []
+  ZSpell: []
+  ESpell: []
+  RSpell: []
 --- !u!1 &9209212253690655861
 GameObject:
   m_ObjectHideFlags: 0

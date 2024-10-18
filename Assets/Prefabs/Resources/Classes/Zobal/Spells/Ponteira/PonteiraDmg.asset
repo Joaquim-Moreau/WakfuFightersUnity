@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebff0ef9bf8227a478724fa03fef07f0, type: 3}
   m_Name: PonteiraDmg
   m_EditorClassIdentifier: 
-  AffectedSide: 0
+  AffectedSide: 1
   cleanAble: 1
   _baseDmg: 10
   _phyRatio: 0.5

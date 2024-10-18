@@ -48,6 +48,6 @@ public class SpellBook : MonoBehaviour
             spellData.UpdateTimer();
         }
         
-        AutoAttack.UpdateTimer();
+        AutoAttack?.UpdateTimer();
     }
 }

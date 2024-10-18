@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484ad8ec620e5744ca2c0dd9abb0197e, type: 3}
+  m_Name: SuperBonbon
+  m_EditorClassIdentifier: 
+  spellName: 68
+  CoolDown: 20
+  ManaCost: 0
+  affectedSide: 0
+  baseRange: 5
+  modifiableRange: 0
+  targeted: 1
+  Effects:
+  - {fileID: 11400000, guid: 353ec08ce0c681b43aac263fb61c6de4, type: 2}
+  - {fileID: 11400000, guid: c7149188ab632c746b6ef3ab6ae320ee, type: 2}
+  - {fileID: 11400000, guid: 7e6b464170c0d0a4381675de674a1fb0, type: 2}
+  EffectsOnCaster: []
+  PushEffect: {fileID: 0}
+  spellIcon: {fileID: 0}
+  description: 

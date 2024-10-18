@@ -30,6 +30,7 @@ public class TargetedProjectile : Holder
             _target.transform.position,
             speed * Time.deltaTime);
         Direction = Statics.GetDirection(this, _target);
+        
         RotateObject();
     }
     

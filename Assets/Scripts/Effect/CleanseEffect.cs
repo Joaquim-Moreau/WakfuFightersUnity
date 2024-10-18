@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New heal Effect", menuName = "Effect/Cleanse Effect")]
 public class CleanseEffect : Effect
 {
     public override void Prepare(Entity caster, Entity target)
