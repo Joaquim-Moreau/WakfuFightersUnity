@@ -23,6 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aea4f81ed23d5fe429c2cf039632db20, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: 4d2389acd445b774ebfcf04078fa3f73, type: 2}
-  spellIcon: {fileID: 0}
+  spellIcon: {fileID: 21300000, guid: 16bd7c724bb8ae14db36a93e544ad370, type: 3}
   description: "Lance un projectile \xE0 courte port\xE9e qui repousse et inflige
-    10(+10% Physcial Strength) d\xE9gats physiques"
+    15(+15% Force) d\xE9gats physiques"

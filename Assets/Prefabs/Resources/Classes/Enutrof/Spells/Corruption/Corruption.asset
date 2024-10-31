@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Corruption
   m_EditorClassIdentifier: 
   spellName: 28
-  CoolDown: 0
-  ManaCost: 0
+  CoolDown: 45
+  ManaCost: 35
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
   targeted: 1
-  Effects: []
-  EffectsOnCaster: []
+  Effects:
+  - {fileID: 11400000, guid: 293abc7a0bb4ba548949c5d4a11f4317, type: 2}
+  EffectsOnCaster:
+  - {fileID: 11400000, guid: 0dd1c0e1d23768f4e850cb33ddf51e73, type: 2}
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: c42cdbff1cb13324292239bc52ec83ab, type: 3}
+  description: "Vole 35 points d'Intelligence \xE0 l'ennemi cibl\xE9"

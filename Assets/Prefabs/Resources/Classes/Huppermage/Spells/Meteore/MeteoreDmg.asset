@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AffectedSide: 1
   cleanAble: 0
-  _baseDmg: 20
+  _baseDmg: 45
   _phyRatio: 0
   _magRatio: 1.3
   _baseLifeSteal: 0

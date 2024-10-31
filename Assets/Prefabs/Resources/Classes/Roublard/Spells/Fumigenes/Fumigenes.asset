@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: Fumigenes
   m_EditorClassIdentifier: 
   spellName: 86
-  CoolDown: 25
-  ManaCost: 30
+  CoolDown: 20
+  ManaCost: 35
   affectedSide: 2
   baseRange: 4
   modifiableRange: 0
   targeted: 0
   Effects:
-  - {fileID: 11400000, guid: b3c4198a64475d949ac2a0394f5fdce8, type: 2}
+  - {fileID: 11400000, guid: b63046dbd3477194daa42fa8edbec97d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 5281d6ef88c5890478e9b5e2806770a4, type: 3}
+  description: "Cr\xE9\xE9 une zone remplie de fum\xE9e, le lanceur et les alli\xE9es
+    deviennent invisibles \xE0 l'int\xE9rieur."

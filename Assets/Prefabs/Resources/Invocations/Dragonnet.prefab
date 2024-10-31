@@ -83,6 +83,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 129
+  enemySide: 1
   colliderRadius: 8
 --- !u!1 &5841608068626797449
 GameObject:
@@ -344,21 +345,22 @@ MonoBehaviour:
   side: 0
   visibleToOpponent: 0
   <ShieldPoints>k__BackingField: 0
-  <maxHP>k__BackingField: 1000
+  <maxHP>k__BackingField: 600
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
-  hpRegen: 6
-  manaRegen: 6
-  phyDmg: 0
-  pushDmg: 0
+  hpRegen: 0
+  manaRegen: 0
+  phyDmg: 45
   magDmg: 0
+  Heal: 0
   LifeSteal: 0
   AttackSpeed: 0.75
   phyRes: 0
-  magRes: 0
+  magRes: 50
   moveSpeed: 3
   RangePoints: 7
   spellBook: {fileID: 0}
+  spellManager: {fileID: 0}
 --- !u!1 &9209212253690655861
 GameObject:
   m_ObjectHideFlags: 0

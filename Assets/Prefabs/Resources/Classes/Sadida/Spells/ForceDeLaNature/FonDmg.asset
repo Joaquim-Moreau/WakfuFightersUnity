@@ -16,7 +16,7 @@ MonoBehaviour:
   cleanAble: 1
   _baseDmg: 100
   _phyRatio: 0
-  _magRatio: 2
+  _magRatio: 3
   _baseLifeSteal: 0
   _type: 1
   _canCrit: 0

@@ -4,39 +4,33 @@ using System.Collections.Generic;
 //using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class Player : Entity
 {
-    // Casts
-    public virtual void CastSpace(InputAction.CallbackContext context)
-    {
-        if (!context.started) return;
-        Debug.Log("Press Space");
-    }
+    public UnityEvent onDeath;
     
-    public virtual void CastA(InputAction.CallbackContext context)
+    protected override void Die()
     {
-        if (!context.started) return;
-        Debug.Log("Press A");
+        _camera.transform.SetParent(null);
+        base.Die();
+        onDeath?.Invoke();
     }
 
-    public virtual void CastZ(InputAction.CallbackContext context)
+    public void ResetCoolDowns()
     {
-        if (!context.started) return;
-        Debug.Log("Press Z");
+        spellBook.ResetCoolDowns();
     }
     
-    public virtual void CastE(InputAction.CallbackContext context)
-    {
-        if (!context.started) return;
-        Debug.Log("Press E");
-    }
+    public virtual void CastSpace(InputAction.CallbackContext context) {}
     
-    public virtual void CastR(InputAction.CallbackContext context)
-    {
-        if (!context.started) return;
-        Debug.Log("Press R");
-    }
+    public virtual void CastA(InputAction.CallbackContext context) {}
+
+    public virtual void CastZ(InputAction.CallbackContext context) {}
+    
+    public virtual void CastE(InputAction.CallbackContext context) {}
+    
+    public virtual void CastR(InputAction.CallbackContext context) {}
 
     protected Vector3 GetMousePos()
     {

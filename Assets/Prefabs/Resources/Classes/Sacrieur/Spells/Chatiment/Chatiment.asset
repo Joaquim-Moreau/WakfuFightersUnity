@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Chatiment
   m_EditorClassIdentifier: 
   spellName: 94
-  CoolDown: 20
-  ManaCost: 0
+  CoolDown: 65
+  ManaCost: 50
   affectedSide: 1
   baseRange: 3
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9f12cf7555b4d924f8a0816ecb5466d1, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 3bded4a246876664eb04d42cb20da1ee, type: 3}
+  description: "Inflige 100(+200% Force) d\xE9gats bruts \xE0 la cible"

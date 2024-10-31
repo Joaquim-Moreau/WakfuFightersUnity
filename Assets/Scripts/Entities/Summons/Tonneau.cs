@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tonneau : Entity
+public class Tonneau : Summon
 {
-    void OnEnable()
-    {
-        hp = maxHP;
-    }
-
     public override float TakeDmg(float damage, DmgType type)
     {
         if (GetAutoAttack().IsReady())

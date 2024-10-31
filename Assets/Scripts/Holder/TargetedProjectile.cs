@@ -30,7 +30,6 @@ public class TargetedProjectile : Holder
             _target.transform.position,
             speed * Time.deltaTime);
         Direction = Statics.GetDirection(this, _target);
-        
         RotateObject();
     }
     
@@ -43,10 +42,6 @@ public class TargetedProjectile : Holder
             {
                 ApplyEffects(obstacle);
                 gameObject.SetActive(false);
-            }
-            else
-            {
-                //Debug.Log("Not the target");
             }
         }
     }

@@ -6,6 +6,9 @@ using UnityEngine;
 public class BotSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> bots;
+    [SerializeField] private Transform botParentTransform;
+
+    public List<GameObject> activeBots;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,7 +16,9 @@ public class BotSpawner : MonoBehaviour
         {
             foreach (var entity in bots)
             {
-                entity.SetActive(true);
+                var bot = Instantiate(entity, botParentTransform);
+                bot.SetActive(true);
+                activeBots.Add(bot);
             }
             gameObject.SetActive(false);
         }

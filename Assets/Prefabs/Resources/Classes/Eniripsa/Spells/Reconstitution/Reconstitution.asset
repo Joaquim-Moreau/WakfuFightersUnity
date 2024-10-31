@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Reconstitution
   m_EditorClassIdentifier: 
   spellName: 26
-  CoolDown: 0
-  ManaCost: 0
+  CoolDown: 45
+  ManaCost: 70
   affectedSide: 0
   baseRange: 5
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d36f1fb6dd6f99b43a6564aa2970103d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 00d93e870e281474eaffc504915561f0, type: 3}
+  description: "Soigne l'alli\xE9 cibl\xE9 de 100(+200% Soin)"

@@ -61,6 +61,9 @@ public class Dash : Holder
 
     private void DashInDirection(Vector3 startingPoint, Vector3 endPoint)
     {
+        Caster.GetComponent<Collider2D>().isTrigger = true;
+        Caster.GetComponent<NavMeshAgent>().enabled = false;
+        
         float distance = Statics.GetDistance(startingPoint, endPoint);
         Vector3 direction = Statics.GetDirection(startingPoint, endPoint);
 
@@ -68,8 +71,6 @@ public class Dash : Holder
         _rb.velocity = direction * speed;
         Direction = direction;
         
-        Caster.GetComponent<Collider2D>().isTrigger = true;
-        Caster.GetComponent<NavMeshAgent>().enabled = false;
         Caster._actionManager.movementState = MovementState.Dashing;
     }
 
@@ -95,7 +96,7 @@ public class Dash : Holder
             }
         }
     }
-
+ 
     private void EndDash()
     {
         _rb.velocity = Vector2.zero;

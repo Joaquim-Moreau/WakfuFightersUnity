@@ -22,5 +22,5 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
+  spellIcon: {fileID: 21300000, guid: 39aa877ea4ff1544584f4220f785e13b, type: 3}
   description: "T\xE9l\xE9porte le lanceur dans la zone cibl\xE9e"

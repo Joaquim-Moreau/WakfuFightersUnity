@@ -20,4 +20,4 @@ MonoBehaviour:
   _phyRatio: 1
   _magRatio: 0
   _baseLifeSteal: 0
-  _type: 0
+  _type: 1

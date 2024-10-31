@@ -22,6 +22,10 @@ public static class Statics
     public static Vector3 GetDirection(Vector3 selfPosition, Vector3 otherPosition)
     {
         Vector3 displacement = GetVector(selfPosition, otherPosition);
+        if (displacement == new Vector3(0, 0, 0))
+        {
+            return new Vector3(0, 0, 0);
+        }
         float distance = Mathf.Sqrt(displacement.x * displacement.x + displacement.y * displacement.y);
 
         return displacement / distance;
@@ -45,6 +49,10 @@ public static class Statics
     public static Vector3 GetDirection(Entity self, Entity other)
     {
         Vector3 displacement = GetVector(self, other);
+        if (displacement == new Vector3(0, 0, 0))
+        {
+            return new Vector3(0, 0, 0);
+        }
         float distance = Mathf.Sqrt(displacement.x * displacement.x + displacement.y * displacement.y);
 
         return displacement / distance;
@@ -68,6 +76,10 @@ public static class Statics
     public static Vector3 GetDirection(Holder holder, Entity other)
     {
         Vector3 displacement = GetVector(holder, other);
+        if (displacement == new Vector3(0, 0, 0))
+        {
+            return new Vector3(0, 0, 0);
+        }
         float distance = Mathf.Sqrt(displacement.x * displacement.x + displacement.y * displacement.y);
 
         return displacement / distance;

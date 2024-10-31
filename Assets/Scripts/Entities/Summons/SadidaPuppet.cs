@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SadidaPuppet : Entity
+public class SadidaPuppet : Summon
 {
-   void OnEnable()
-   {
-      hp = maxHP;
-   }
-
    public override void LaunchAuto(Entity target)
    {
       spellManager.CastOnSelf(spellBook.AutoAttack);

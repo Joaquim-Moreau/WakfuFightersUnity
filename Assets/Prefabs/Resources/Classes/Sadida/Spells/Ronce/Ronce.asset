@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ronce
   m_EditorClassIdentifier: 
   spellName: 97
-  CoolDown: 10
+  CoolDown: 6
   ManaCost: 0
   affectedSide: 1
   baseRange: 6
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 034656bd184f09d4f8dac5e1c46c0dd0, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 3d4455fbc99f65b49a27cf9a63eaa3d6, type: 3}
+  description: "Inflige 50(+130% Intelligence) d\xE9gats magiques dans la zone cibl\xE9e"

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TraitArdent
   m_EditorClassIdentifier: 
   spellName: 56
-  CoolDown: 6
-  ManaCost: 15
+  CoolDown: 8
+  ManaCost: 30
   affectedSide: 1
-  baseRange: 3
+  baseRange: 1
   modifiableRange: 0
   targeted: 0
   Effects:
@@ -24,5 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a07c3675b720a984584a450094b8da4e, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: dd3885098198d104888439be4c590aba, type: 3}
+  description: "Tire un trait de feu dans la direction cibl\xE9e, infligeant 50(150%
+    Intelligence) d\xE9gats magiques et brule les ennemis touch\xE9s, infligeant
+    50 points de d\xE9gats bruts en 3 secondes"

@@ -298,7 +298,7 @@ MonoBehaviour:
   targetLimit: 1
   TriggerSide: 1
   AreaOfEffectLifeTime: 0.4
-  refreshPeriod: 1
+  refreshPeriod: 10
 --- !u!95 &995147314466302698
 Animator:
   serializedVersion: 5

@@ -25,4 +25,4 @@ MonoBehaviour:
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: b450d0b398880cb458f83d1a01b399ca, type: 3}
   description: "Tire un rayon dans la direction cibl\xE9e et inflige des d\xE9gats
-    \xE0 tous les ennemis dans la zone"
+    bruts \xE0 tous les ennemis dans la zone"

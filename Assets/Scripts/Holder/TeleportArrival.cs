@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class TeleportArrival : Holder
 {
@@ -13,7 +11,10 @@ public class TeleportArrival : Holder
    public override void Init(Entity caster, Vector3 launchPosition)
    {
       Caster = caster;
-      transform.position = launchPosition;
+      NavMeshHit hit;
+      if (NavMesh.SamplePosition(launchPosition, out hit, 2.0f, NavMesh.AllAreas)) {
+         transform.position = hit.position;
+      }
       _teleportDone = false;
       
       StopAllCoroutines();
@@ -56,7 +57,12 @@ public class TeleportArrival : Holder
       }
       else
       {
-         Caster.transform.position = transform.position;
+         Caster.transform.GetComponent<NavMeshAgent>().enabled = false;
+         NavMeshHit hit;
+         if (NavMesh.SamplePosition(transform.position, out hit, 2.0f, NavMesh.AllAreas)) {
+            Caster.transform.position = hit.position;
+         }
+         Caster.transform.GetComponent<NavMeshAgent>().enabled = true;
       }
       _teleportDone = true;
    }

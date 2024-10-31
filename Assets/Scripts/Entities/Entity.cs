@@ -29,11 +29,11 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float manaRegen = 6f;
  
     [SerializeField] protected int phyDmg;
-    [SerializeField] protected int pushDmg;
+    protected int pushDmg;
     [SerializeField] protected int magDmg;
     protected int CritChance = 15;
     protected int CritDmg = 50;
-    protected int Heal = 0;
+    [SerializeField] protected int Heal = 0;
     protected int Tenacity = 100;
     [SerializeField] protected int LifeSteal;
     [SerializeField] protected float AttackSpeed = 1f;
@@ -84,21 +84,22 @@ public class Entity : MonoBehaviour
     
     // Effects management
     [System.NonSerialized] public List<Effect> delayedEffects = new List<Effect>();
-    [System.NonSerialized] public List<DurableEffect> currentEffects = new List<DurableEffect>();
-    [System.NonSerialized] public List<ShieldEffect> currentShields = new List<ShieldEffect>();
-    [System.NonSerialized] public List<PoisonEffect> currentPoisons = new List<PoisonEffect>();
-    [System.NonSerialized] public PushEffect currentPush = null;
-    
+    [System.NonSerialized] public List<DurableEffectObject> currentEffects = new List<DurableEffectObject>();
+    [System.NonSerialized] public List<ShieldEffectObject> currentShields = new List<ShieldEffectObject>();
+    [System.NonSerialized] public List<PoisonEffectObject> currentPoisons = new List<PoisonEffectObject>();
+    [System.NonSerialized] public PushEffectObject currentPush = null;
+     
     // Actions
     [System.NonSerialized] public EntityActionManager _actionManager;
     [System.NonSerialized] public Animator _Animator;
     protected Camera _camera;
     [FormerlySerializedAs("SpellBook")] public SpellBook spellBook;
-    protected SpellManager spellManager;
+    public SpellManager spellManager;
     
     
     //
     protected Renderer Renderer;
+    private SpriteRenderer _spriteRenderer;
     protected Canvas _healthBarCanvas;
     private bool _pushDmgImmunity = false;
 
@@ -109,6 +110,7 @@ public class Entity : MonoBehaviour
         _healthBar = GetComponentInChildren<HealthBar>();
         _healthBarCanvas = GetComponentInChildren<Canvas>();
         Renderer = GetComponent<Renderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         
         _actionManager = GetComponent<EntityActionManager>();
         _camera = Camera.main;
@@ -117,16 +119,13 @@ public class Entity : MonoBehaviour
         spellBook = GetComponent<SpellBook>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         hp = maxHP;
         mana = maxMana;
         if (side == Side.Green) visibleToOpponent = true;
     }
-    
-
-    // Update is called once per frame
+   
     protected virtual void Update()
     {
         // Effects
@@ -164,6 +163,10 @@ public class Entity : MonoBehaviour
                 currentEffects[i].UpdateDuration();
             }
         }
+        
+        Color tmp = _spriteRenderer.color;
+        tmp.a = IsInvisible()? 0.5f : 255f;
+        _spriteRenderer.color = tmp;
     }
     
     protected void UpdateShields()
@@ -177,7 +180,6 @@ public class Entity : MonoBehaviour
         
         for (int i = currentShields.Count - 1; i >= 0; i--)
         {
-            // Duration
             if (currentShields[i].IsExpired()|| currentShields[i].totalShield == 0)
             {
                 currentShields[i].Remove(this);
@@ -198,19 +200,16 @@ public class Entity : MonoBehaviour
         
         for (int i = currentPoisons.Count - 1; i >= 0; i--)
         {
-            // Refresh the clock
             if (currentPoisons[i].refresh <= 0f)
             {
                 currentPoisons[i].refresh += 0.5f;
                 currentPoisons[i].ApplyTick(this);
-                //currentPoisons[i].Apply(this);
             }
             else
             {
                 currentPoisons[i].refresh -= Time.deltaTime;
             }
             
-            // Duration
             if (currentPoisons[i].IsExpired())
             {
                 currentPoisons[i].Remove(this);
@@ -241,25 +240,15 @@ public class Entity : MonoBehaviour
         }
     }
     
-
     protected void UpdateUI()
     {
         _healthBar.UpdateShieldsBar(ShieldPoints, maxHP);
         _healthBar.UpdateHealthBar(hp, maxHP);
         _healthBar.UpdateManaBar(mana, 180);
-
-        // update cooldown visuals
     }
 
     protected void UpdateVision()
     {
-        if (side == Side.Red)
-        {
-            //Renderer.enabled = visibleToOpponent;
-            //_healthBarCanvas.enabled = visibleToOpponent;
-            
-        }
-        
         if (side == Side.Green) return;
         
         if (_previouslyVisible != visibleToOpponent)
@@ -279,11 +268,13 @@ public class Entity : MonoBehaviour
 
     private void GoRecursivelyToLayer(int layer, GameObject obj)
     {
-        //Debug.Log(obj.name);
         obj.layer = layer;
         foreach (Transform child in obj.transform)
         {
-            GoRecursivelyToLayer(layer, child.gameObject);
+            if (!child.CompareTag("Vision"))
+            {
+                GoRecursivelyToLayer(layer, child.gameObject);
+            }
         }
     }
 
@@ -304,7 +295,7 @@ public class Entity : MonoBehaviour
             default:
                 break;
         }
-        // update shields
+
         int postMitigatedDamage = (int)finalDmg;
         foreach (var shield in currentShields)
         {
@@ -335,7 +326,6 @@ public class Entity : MonoBehaviour
     
     public void HealHp(float amount)
     {
-        // if pas insoignable
         hp += (int)(amount * (100f + ReceivedHealAmp)/100f );
     }
 
@@ -378,13 +368,10 @@ public class Entity : MonoBehaviour
 
     protected virtual void Die()
     {
-        Debug.Log($"{name} is dead");
         IsAlive = false;
         gameObject.SetActive(false);
     }
     
-    
-    // Entity capacity according to controls
     public bool CannotCastSpell()
     {
         return isAirBorne || stun > 0 || silence > 0 || (_actionManager.movementState == MovementState.Dashing); 
@@ -516,29 +503,13 @@ public class Entity : MonoBehaviour
         if (!isAirBorne) return;
         if (_pushDmgImmunity) return;
         
-        if (other.gameObject.CompareTag("Wall"))
+        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Entity"))
         {
-            currentPush.ApplyPushDamage(this);
+            currentPush.Remove(this);
             currentPush = null;
             
             StartCoroutine(PushDmgImmunity());
             isAirBorne = false;
-        }
-        else
-        {
-            if (other.gameObject.CompareTag("Entity"))
-            {
-                Entity collateral = other.gameObject.GetComponent<Entity>();
-                collateral.TakeDmg(25, DmgType.Physical);
-                
-                currentPush.ApplySecondaryPushDamage(collateral);
-                currentPush.ApplyPushDamage(this);
-                currentPush = null;
-                
-                StartCoroutine(PushDmgImmunity());
-                isAirBorne = false;
-                
-            }
         }
     }
 

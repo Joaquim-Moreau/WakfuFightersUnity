@@ -30,6 +30,7 @@ public abstract class Spell : MonoBehaviour
 
     protected IEnumerator ManageDelay()
     {
+        ReadyToApplyEffects = false;
         yield return new WaitForSeconds(delayBeforeSpawn);
         ReadyToApplyEffects = true;
     }

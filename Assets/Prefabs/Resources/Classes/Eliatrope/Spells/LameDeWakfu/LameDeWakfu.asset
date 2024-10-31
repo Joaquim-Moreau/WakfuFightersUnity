@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LameDeWakfu
   m_EditorClassIdentifier: 
   spellName: 19
-  CoolDown: 12
+  CoolDown: 15
   ManaCost: 35
   affectedSide: 1
   baseRange: 3
@@ -21,8 +21,8 @@ MonoBehaviour:
   targeted: 1
   Effects:
   - {fileID: 11400000, guid: 8a6968645f6be9541b92a7b7653af377, type: 2}
-  - {fileID: 11400000, guid: 03ae545fd7eea474f9a8d8bb488cf482, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 03e6f50b7a998ed46a4c3f9f8cb0855e, type: 3}
-  description: "Frappe la cible avec une lame de wakfu et inflige des d\xE9gats"
+  description: "Frappe la cible avec une lame de wakfu et inflige 100(+160% Intelligence)
+    d\xE9gats magiques"

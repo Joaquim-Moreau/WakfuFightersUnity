@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Griffe
   m_EditorClassIdentifier: 
   spellName: 10
-  CoolDown: 12
-  ManaCost: 0
+  CoolDown: 4
+  ManaCost: 20
   affectedSide: 1
   baseRange: 3
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 612feb0d42b69b544a837506fb1f67e5, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 0389074d1deba1c448d45812db40c0df, type: 3}
+  description: "Inflige 50(+115% Force) d\xE9gats physiques \xE0 la cible. Peut infliger
+    un coup critique"

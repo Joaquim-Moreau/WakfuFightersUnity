@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -785081340, guid: f1a169c2b01745c4f8cded4bd58dcf25, type: 3}
+  m_Sprite: {fileID: 1308085149, guid: cd275237a5fbcbd46b228ce41d591645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,18 +119,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -7.5}
+  m_Offset: {x: 0, y: -2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.95}
-    oldSize: {x: 4, y: 16}
+    pivot: {x: 0.5, y: 0.9}
+    oldSize: {x: 2.6666667, y: 5.3333335}
     newSize: {x: 4, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 15}
+  m_Size: {x: 2, y: 4}
   m_EdgeRadius: 0
 --- !u!114 &912579340644127798
 MonoBehaviour:
@@ -145,8 +145,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.5
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: 1b7b2cb6eb8be734c96da0134428ab68, type: 2}
   refreshPeriod: 1
+  changingDirection: 1
 --- !u!95 &7395299223657093686
 Animator:
   serializedVersion: 5
@@ -157,7 +159,7 @@ Animator:
   m_GameObject: {fileID: 9002809084523510774}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 961b7600ca9aad049bbf79ecad3495c0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48286326d7497f542a3a93548dce5f9c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

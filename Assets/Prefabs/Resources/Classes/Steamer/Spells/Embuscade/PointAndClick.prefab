@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d618873038fadf743a8d6498f305b267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.6
+  lifeTime: 2
   delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: b179bbdef2038074ab98fd47811ce2a4, type: 2}
-  refreshPeriod: 1
+  refreshPeriod: 3

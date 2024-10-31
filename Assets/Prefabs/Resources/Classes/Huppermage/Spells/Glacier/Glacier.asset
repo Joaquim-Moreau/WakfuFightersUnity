@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 51
   CoolDown: 10
-  ManaCost: 25
+  ManaCost: 30
   affectedSide: 2
   baseRange: 0
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d54cfd4941e3c144d9365040718193de, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 2bccd332882fcd14b9e4c377e432c587, type: 3}
+  description: "Frappe en zone autour du lanceur, inflige 60(+150% Intelligence)
+    d\xE9gats magiques et soigne le lanceur de 50% des d\xE9gats inflig\xE9s"

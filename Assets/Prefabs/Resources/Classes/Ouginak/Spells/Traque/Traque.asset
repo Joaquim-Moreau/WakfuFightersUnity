@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Traque
   m_EditorClassIdentifier: 
   spellName: 75
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 25
+  ManaCost: 40
   affectedSide: 0
   baseRange: 0
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abc8f7376866bc34c91a948df7d36463, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 678c70380c3a7e4409aadfd0778570b5, type: 3}
+  description: "Le lanceur gagne un bonus de 30% de vitesse de d\xE9placement pendant
+    3 secondes"

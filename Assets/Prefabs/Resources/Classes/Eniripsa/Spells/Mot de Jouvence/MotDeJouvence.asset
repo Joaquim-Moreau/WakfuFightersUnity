@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 04d744b3d521ed048a75b204f219a85d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: e552aaac24ac47f4ba0d6947fbecdfd7, type: 3}
+  description: "Purge la cible de tous ses effets, positifs ou n\xE9gatifs"

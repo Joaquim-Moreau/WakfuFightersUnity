@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 16
   CoolDown: 1
-  ManaCost: 20
+  ManaCost: 50
   affectedSide: 2
   baseRange: 5
   modifiableRange: 0

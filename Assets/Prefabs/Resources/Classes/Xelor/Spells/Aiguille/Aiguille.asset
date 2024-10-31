@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 118
   CoolDown: 8
-  ManaCost: 0
+  ManaCost: 40
   affectedSide: 1
   baseRange: 7
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9bafd009cd676de4a87bc770c416e36d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 3e345289969aa4b4095b247b953b0407, type: 3}
+  description: "Lance une aiguille dans la direction cibl\xE9e et inflige 50(+130%
+    Intelligence) d\xE9gats bruts \xE0 tous les ennemis touch\xE9s"

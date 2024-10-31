@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 8
   CoolDown: 30
-  ManaCost: 0
+  ManaCost: 15
   affectedSide: 0
   baseRange: 0
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef4e9a8fc3cfedf45b69d09d9a49a8a1, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: ef5369d9ddf9c2746b035ada970a1052, type: 3}
+  description: Le lanceur gagne un bonus de 50% de chances de coup critiques pendant
+    4 secondes

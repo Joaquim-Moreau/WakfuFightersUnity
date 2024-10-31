@@ -15,8 +15,8 @@ MonoBehaviour:
   AffectedSide: 1
   cleanAble: 1
   _baseDmg: 50
-  _phyRatio: 0.7
-  _magRatio: 1.2
+  _phyRatio: 0.5
+  _magRatio: 1.5
   _baseLifeSteal: 0
   _type: 0
   _canCrit: 0

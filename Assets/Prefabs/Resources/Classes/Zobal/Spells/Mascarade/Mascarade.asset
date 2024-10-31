@@ -23,6 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 68a84136299989647b74962e56e415fc, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: 5196e8ae69da2be4faa34541556184e6, type: 2}
-  spellIcon: {fileID: 0}
-  description: "Inflige 100 (+150% Physical Strength) d\xE9gats physiques \xE0 la
-    cible et la repousse."
+  spellIcon: {fileID: 21300000, guid: 08a79ba9e6c377c48a91bea4b4b19065, type: 3}
+  description: "Inflige 100 (+180% Force) d\xE9gats physiques \xE0 la cible et la
+    repousse."

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Magnetisme
   m_EditorClassIdentifier: 
   spellName: 87
-  CoolDown: 2
-  ManaCost: 25
+  CoolDown: 18
+  ManaCost: 35
   affectedSide: 0
   baseRange: 10
   modifiableRange: 0
@@ -22,5 +22,5 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: a5ed4cd8f25d5e344abd657974d91987, type: 2}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: c39f29724bbba2744bad726e572ea951, type: 3}
+  description: "Attire la bombe cibl\xE9e ou stun l'ennemi cibl\xE9 pendant 1 seconde."

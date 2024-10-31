@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: ComboDmg
   m_EditorClassIdentifier: 
   AffectedSide: 1
-  Delay: 0
   cleanAble: 0
-  _baseDmg: 20
-  _phyRatio: 1.1
+  _baseDmg: 50
+  _phyRatio: 1.2
   _magRatio: 0
   _baseLifeSteal: 0
   _type: 0
-  _canCrit: 0
+  _canCrit: 1

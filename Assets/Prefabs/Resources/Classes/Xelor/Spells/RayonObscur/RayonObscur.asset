@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RayonObscur
   m_EditorClassIdentifier: 
   spellName: 116
-  CoolDown: 4
-  ManaCost: 0
+  CoolDown: 5
+  ManaCost: 20
   affectedSide: 1
   baseRange: 1
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8d5b0538c017ecc439c7977c28de2026, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 382db002a53ce834bb8c9ffa65cf93a7, type: 3}
+  description: "Tire un rayon dans la zone cibl\xE9e et inflige 55(+100% Intelligence)
+    d\xE9gats magiques \xE0 tous les ennemis touch\xE9s"

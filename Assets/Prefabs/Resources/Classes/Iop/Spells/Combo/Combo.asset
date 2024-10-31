@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Combo
   m_EditorClassIdentifier: 
   spellName: 61
-  CoolDown: 2
-  ManaCost: 0
+  CoolDown: 3.5
+  ManaCost: 15
   affectedSide: 1
   baseRange: 2
   modifiableRange: 0
@@ -25,5 +25,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: eecb85004343b0e4d8b78fd7f9877b32, type: 3}
-  description: La prochaine auto attaque infligera 20(+110% Physical Strength) et
-    stun la cible pendant 0.5s
+  description: "Inflige 50(+120% Force) points de d\xE9gats physiques \xE0 la cible
+    et la stun pendant 0.75 secondes"

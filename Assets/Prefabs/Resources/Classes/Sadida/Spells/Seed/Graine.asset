@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 96
   CoolDown: 20
-  ManaCost: 0
+  ManaCost: 35
   affectedSide: 2
   baseRange: 0
   modifiableRange: 1
@@ -22,5 +22,6 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 114ea05f3db31844095c9ad8a7453564, type: 3}
+  description: "Pose une plante au sol qui apr\xE8s 2.5s se transforme en poup\xE9e
+    explosive"

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FuriaBoost
   m_EditorClassIdentifier: 
   spellName: 123
-  CoolDown: 8
+  CoolDown: 6
   ManaCost: 15
   affectedSide: 1
   baseRange: 3

@@ -15,9 +15,9 @@ MonoBehaviour:
   AffectedSide: 1
   cleanAble: 1
   Duration: 3
-  particleSystem: {fileID: 0}
+  particleSystem: {fileID: 4678103677468820507, guid: 69342350f3fcdf744898d7730b27644c, type: 3}
   _baseDmg: 100
-  _phyRatio: 1
+  _phyRatio: 0
   _magRatio: 0
   _baseLifeSteal: 0
   _type: 0

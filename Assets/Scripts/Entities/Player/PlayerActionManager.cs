@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.AI;
-using UnityEngine.WSA;
 
 public class PlayerActionManager : EntityActionManager
 {
@@ -13,6 +12,8 @@ public class PlayerActionManager : EntityActionManager
     private Animator _animator;
     private NavMeshAgent _agent;
     private SpellManager spellManager;
+
+    [SerializeField] private LayerMask clickable;
     
     protected override void Awake()
     {
@@ -101,7 +102,7 @@ public class PlayerActionManager : EntityActionManager
     {
         Vector2 pos2D = new Vector2(position.x, position.y);
         
-        var targetCollider = Physics2D.OverlapPoint(pos2D);
+        var targetCollider = Physics2D.OverlapPoint(pos2D, clickable);
         if (targetCollider is null) return null;
         
         if (targetCollider.CompareTag("Entity") || targetCollider.CompareTag("Player"))
@@ -166,10 +167,10 @@ public class PlayerActionManager : EntityActionManager
     {
         if (distanceToTarget <= SpellBuffer.ActualRange)
         {
+            Stop();
             spellManager.Launch(SpellBuffer, CurrentTarget);
             SpellBuffer = null;
             CurrentTarget = null;
-            Stop();
         }
         else
         {

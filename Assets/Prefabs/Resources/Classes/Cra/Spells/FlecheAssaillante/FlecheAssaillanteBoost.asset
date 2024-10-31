@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlecheAssaillanteBoost
   m_EditorClassIdentifier: 
   spellName: 3
-  CoolDown: 7
+  CoolDown: 5
   ManaCost: 15
   affectedSide: 1
   baseRange: 11

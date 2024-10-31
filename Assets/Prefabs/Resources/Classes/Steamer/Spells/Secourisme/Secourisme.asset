@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 08a439d04d45683499e2970ef0e455cd, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: b957c614d9301484f91e7f274b9e71da, type: 3}
+  description: "Soigne l'alli\xE9 cibl\xE9 de 100(+100% Soin)"

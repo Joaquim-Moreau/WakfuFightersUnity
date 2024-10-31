@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Molosse
   m_EditorClassIdentifier: 
   spellName: 73
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 8
+  ManaCost: 20
   affectedSide: 1
   baseRange: 3
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cf11cb0612c1f5f4abe489a0e950fe7f, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 2033423ef26beba4ab55c1261b09c4eb, type: 3}
+  description: "Frappe la cible, inflige 50(130% Force) d\xE9gats physiques et soigne
+    le lanceur de 15% des d\xE9gats inflig\xE9s"

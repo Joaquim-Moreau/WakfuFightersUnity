@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e684fee813c9bc447ad2f5b68f827d41, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
+  spellIcon: {fileID: 21300000, guid: c20cd2f73ecb7074e9cef9fe09029ed5, type: 3}
   description: "Pose un glyphe dans la zone cibl\xE9e, les ennemis qui touchent les
-    bords subissent 50(+80% Physical Strength)(+80% Magical Power) d\xE9gats magiques
-    et sont immobilis\xE9s pendant 2 secondes"
+    bords subissent 50(+100% Force)(+100% Intelligence) d\xE9gats magiques et sont
+    immobilis\xE9s pendant 2 secondes"

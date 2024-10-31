@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2792b3631c9a130468451857070d6b64, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: a9485ef9619c7f04782608270823510c, type: 3}
+  description: "Dash dans la direction cibl\xE9e, inflige 30(+50% Force) d\xE9gats
+    physiques aux ennemis sur le chemin"

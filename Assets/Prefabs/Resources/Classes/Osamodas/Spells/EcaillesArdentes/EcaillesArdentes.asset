@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 70
   CoolDown: 15
-  ManaCost: 0
+  ManaCost: 50
   affectedSide: 2
   baseRange: 0
   modifiableRange: 0
@@ -25,5 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 358c58b62b812b24d97fb48b1f8eb821, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 85c9f2b234d3c2042bba6f33ba33215d, type: 3}
+  description: "Le lanceur s'entoure de flammes pendants 3 secondes, r\xE9duisant
+    les r\xE9sistances ennemies et infligeant 15(+35% Intelligence) points de d\xE9gats
+    bruts toute les 0.5 secondes."

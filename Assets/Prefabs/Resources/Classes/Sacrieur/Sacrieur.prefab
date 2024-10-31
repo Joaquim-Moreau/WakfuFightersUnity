@@ -357,6 +357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
+  clickable:
+    serializedVersion: 2
+    m_Bits: 9
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,21 +535,25 @@ MonoBehaviour:
   side: 0
   visibleToOpponent: 0
   <ShieldPoints>k__BackingField: 0
-  <maxHP>k__BackingField: 1000
+  <maxHP>k__BackingField: 3000
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
-  hpRegen: 6
+  hpRegen: 12
   manaRegen: 6
-  phyDmg: 100
-  pushDmg: 100
-  magDmg: 0
-  LifeSteal: 15
+  phyDmg: 70
+  magDmg: 50
+  Heal: 50
+  LifeSteal: 0
   AttackSpeed: 1
   phyRes: 40
   magRes: 40
   moveSpeed: 4
   RangePoints: 2
   spellBook: {fileID: 0}
+  spellManager: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &62165812256914210
 MonoBehaviour:
   m_ObjectHideFlags: 0

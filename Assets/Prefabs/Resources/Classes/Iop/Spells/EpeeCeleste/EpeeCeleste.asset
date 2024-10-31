@@ -25,5 +25,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: ee40d72ece864764f9d17d015aedb524, type: 3}
-  description: "Inflige 10(+20% Physical Strength)(+20%Magical Power) en zone croix
-    et augment la vitesse d'attaque des alli\xE9s de 30% pendant 4s"
+  description: "Inflige 10(+35% Force) d\xE9gats physiques en zone croix et augmente
+    la vitesse d'attaque des alli\xE9s de 30% pendant 4s"

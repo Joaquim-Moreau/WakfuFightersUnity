@@ -26,7 +26,6 @@ public class Zobal : Player
     public override void CastSpace(InputAction.CallbackContext context)
     {
         if (!context.started) return;
-        Debug.Log("Casting : " + spellBook.SpaceSpell[0].spellName);
         spellManager.CastOnSelf(spellBook.SpaceSpell[0]);
     }
     
@@ -35,12 +34,10 @@ public class Zobal : Player
         if (!context.started) return;
         if (_currentMask == Masque.Psycopathe)
         {
-            Debug.Log("Casting : " + spellBook.ASpell[1].spellName);
             spellManager.CastSpell(spellBook.ASpell[1], GetMousePos());
         }
         else
         {
-            Debug.Log("Casting : " + spellBook.ASpell[0].spellName);
             spellManager.CastSpell(spellBook.ASpell[0], GetMousePos());
         }
     }
@@ -51,12 +48,10 @@ public class Zobal : Player
         
         if (_currentMask == Masque.Intrepide)
         {
-            Debug.Log("Casting : " + spellBook.ZSpell[1].spellName);
             spellManager.CastOnSelf(spellBook.ZSpell[1]);
         }
         else
         {
-            Debug.Log("Casting : " + spellBook.ZSpell[0].spellName);
             spellManager.CastOnSelf(spellBook.ZSpell[0]);
         }
     }
@@ -67,12 +62,10 @@ public class Zobal : Player
         
         if (_currentMask == Masque.Pleutre)
         {
-            Debug.Log("Casting : " + spellBook.ESpell[1].spellName);
             spellManager.CastSpell(spellBook.ESpell[1], GetMousePos());
         }
         else
         {
-            Debug.Log("Casting : " + spellBook.ESpell[0].spellName);
             spellManager.CastSpell(spellBook.ESpell[0], GetMousePos());
         }
     }
@@ -80,7 +73,6 @@ public class Zobal : Player
     public override void CastR(InputAction.CallbackContext context)
     {
         if (!context.started) return;
-        Debug.Log("Casting : " + spellBook.RSpell[0].spellName);
         spellManager.CastSpell(spellBook.RSpell[0], GetMousePos());
     }
     

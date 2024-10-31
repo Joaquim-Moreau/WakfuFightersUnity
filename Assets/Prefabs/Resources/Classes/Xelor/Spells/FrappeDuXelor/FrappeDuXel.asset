@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FrappeDuXel
   m_EditorClassIdentifier: 
   spellName: 119
-  CoolDown: 12
-  ManaCost: 0
+  CoolDown: 60
+  ManaCost: 55
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1287c27cc4102b4ca7abeb4368eaec3, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: cbfc73a6e10b18543aca486b93d1c208, type: 3}
+  description: "Inflige 120(+200% Intelligence) d\xE9gats magiques dans la zone cibl\xE9e"

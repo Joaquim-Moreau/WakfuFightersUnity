@@ -16,6 +16,6 @@ MonoBehaviour:
   cleanAble: 1
   Duration: 5
   particleSystem: {fileID: 2955197092750843386, guid: 5e7b5b685417cd84cbb761320d9c81ef, type: 3}
-  _baseShield: 20
+  _baseShield: 50
   _phyRatio: 0
-  _magRatio: 0.3
+  _magRatio: 1.5

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PiegeMortel
   m_EditorClassIdentifier: 
   spellName: 104
-  CoolDown: 5
+  CoolDown: 10
   ManaCost: 30
   affectedSide: 1
   baseRange: 5
@@ -25,6 +25,6 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 0b55b49bf61a0e14ab542ec69fe02786, type: 3}
-  description: "Pose un pi\xE8ge au sol qui devient apr\xE8s 2.5s, le pi\xE8ge inflige
-    10 (+40% Physical Strength)(+20% Magical Power) d\xE9gats physique ainsin qu'un
-    poison pendant 3 secondes"
+  description: "Pose un pi\xE8ge au sol qui devient actif apr\xE8s 3 secondes, le
+    pi\xE8ge inflige 10 (+50% Force) d\xE9gats physiques ainsi que 100(+100% Force)
+    d\xE9gats magiques en 3 secondes sous forme de poison."

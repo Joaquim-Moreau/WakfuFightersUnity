@@ -24,5 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 91c61f84bbbce084e80761e0eec32ecd, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 3f96831dc94338d4f94ccc27495c7152, type: 3}
+  description: "Immobilise et empoisonne la cible infligeant 120(+120% Intelligence)
+    d\xE9gats magiques pendant 2 secondes"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 9
   CoolDown: 8
-  ManaCost: 0
+  ManaCost: 40
   affectedSide: 1
   baseRange: 5
   modifiableRange: 0
@@ -25,5 +25,7 @@ MonoBehaviour:
   EffectsOnCaster:
   - {fileID: 11400000, guid: aaa34708fd7be4447a8b1cfdc50264f9, type: 2}
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 4545206fbf862284385d847cc9062445, type: 3}
+  description: "Lance une carte dans la direction cibl\xE9e, inflige 50(+120% Force)
+    d\xE9gats physiques, stun le premier ennemi touch\xE9 pendant 1 seconde et soigne
+    le lanceur de 50(+100% Soin)"

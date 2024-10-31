@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74bd5adb7b9030f40bfdac26495fe74b, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 8a46a37f2ec4ac3429e9f4583a923097, type: 3}
+  description: "Frappe en ligne dans la direction cibl\xE9e et inflige 25(+110% Force)
+    d\xE9gats physiques. Peut infliger un coup critique"

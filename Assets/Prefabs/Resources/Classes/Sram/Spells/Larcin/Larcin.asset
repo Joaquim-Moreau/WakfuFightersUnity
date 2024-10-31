@@ -23,8 +23,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fde0f83cfd7a769499f7e1d22512e5e9, type: 2}
   - {fileID: 11400000, guid: db9dc9bfd56228b44a43bac3c5864c26, type: 2}
   EffectsOnCaster:
-  - {fileID: 11400000, guid: 0688f68df445f6849b1df2df2a24237a, type: 2}
+  - {fileID: 11400000, guid: 93f18d7766d99f64a842f89ef70bd052, type: 2}
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 2bb02b871b3de264084da35529482ade, type: 3}
-  description: "Inflige 50 (+80% Physical Strength) d\xE9gats physiques \xE0 la cible
-    et retire 20 Physical strength, le lanceur gagne le double de ce montant."
+  description: "Inflige 50 (+100% Force) d\xE9gats physiques \xE0 la cible (peut
+    infliger un coup critique) et vole 20 points de force. Peut infliger un coup
+    critique"

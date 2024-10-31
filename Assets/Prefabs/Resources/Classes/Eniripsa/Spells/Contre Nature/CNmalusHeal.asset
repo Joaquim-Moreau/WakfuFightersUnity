@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AffectedSide: 0
   cleanAble: 1
-  Duration: 6
+  Duration: 15
   particleSystem: {fileID: 0}
   _stat: 13
   _amount: -100

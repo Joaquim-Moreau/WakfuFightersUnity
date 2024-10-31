@@ -24,5 +24,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: b12502ba5c973e3488a651f1e7634829, type: 3}
-  description: "Lance un projectile explosif qui inflige 60(100% Physical Strength)(+80%
-    Magical power) d\xE9gats physiques"
+  description: "Lance un projectile explosif qui inflige 125(150% Force)(+80% Intelligence)
+    d\xE9gats bruts"

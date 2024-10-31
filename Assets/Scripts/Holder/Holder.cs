@@ -12,13 +12,11 @@ public class Holder : Spell
 
     public override void Init(Entity caster, Vector3 launchPosition)
     {
-        //Caster = caster;
         AlreadyHit = new List<Entity>();
     }
     
     public override void Init(Entity caster, Entity target)
     {
-        //Caster = caster;
         AlreadyHit = new List<Entity>();
     }
     
@@ -49,6 +47,7 @@ public class Holder : Spell
         Vector3 displacement = transform.position - caster.transform.position;
         displacement.z = 0f;
         float dist = Mathf.Sqrt(displacement.x * displacement.x + displacement.y * displacement.y);
+        
         Direction = displacement / dist;
     }
     

@@ -13,20 +13,17 @@ public class SpellManager : MonoBehaviour
     {
         if (_caster.CannotCastSpell())
         {
-            Debug.Log("Impossible to cast");
             return;
         }
         
         //if (!SpellCDManager.instance.IsSpellReady(spellData.spellName))
         if (!spellData.IsReady())
         { 
-            Debug.Log("Spell is on cooldown");
             return;
         }
         
         if (_caster.mana < spellData.ManaCost)
         {
-            Debug.Log("Not enough mana : " + _caster.mana + " < " + spellData.ManaCost);
             return;
         }
         
@@ -42,13 +39,11 @@ public class SpellManager : MonoBehaviour
         Entity target = _caster._actionManager.GetTarget(targetPosition);
         if (target is null)
         {
-            Debug.Log("No enemy at target position or not visible.");
             return;
         }
         
         if(!spellData.CanSpellAffect(target))
         {
-            Debug.Log("Can't cast on this enemy : " + target.side + " / " + spellData.affectedSide);
             return;
         }
         
@@ -67,20 +62,17 @@ public class SpellManager : MonoBehaviour
     {
         if (_caster.CannotCastSpell())
         {
-            Debug.Log("Impossible to cast");
             return;
         }
         
         //if (!SpellCDManager.instance.IsSpellReady(spellData.spellName))
         if (!spellData.IsReady())    
         {
-            Debug.Log("Spell is on cooldown.");
             return;
         }
         
         if (_caster.mana < spellData.ManaCost)
         {
-            Debug.Log("Not enough mana : " + _caster.mana + " < " + spellData.ManaCost);
             return;
         }
         

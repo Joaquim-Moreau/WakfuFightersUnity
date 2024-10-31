@@ -8,7 +8,6 @@ public class HarpoActionManager : EntityActionManager
 {
     [SerializeField] private EntityVision entityVision;
     [SerializeField] private bool isStatic;
-    private Player _owner;
     private Animator _animator;
     private NavMeshAgent _agent;
     
@@ -24,11 +23,6 @@ public class HarpoActionManager : EntityActionManager
         PathReset = true;
     }
     
-    private void Start()
-    {
-        _owner = MainSceneManager.instance.player.GetComponent<Player>();
-    }
-
     private void Update()
     {
         if (entityVision.visibleEntities.Any())

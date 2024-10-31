@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Perfusion
   m_EditorClassIdentifier: 
   spellName: 92
-  CoolDown: 5
-  ManaCost: 15
+  CoolDown: 15
+  ManaCost: 25
   affectedSide: 0
   baseRange: 0
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 616966f6292383f4b9d1e0887dcca2aa, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: cd592bdad406ead4091f18b2fc96ebc9, type: 3}
+  description: Soigne le lanceur de 150(+100% Soin) points de vie

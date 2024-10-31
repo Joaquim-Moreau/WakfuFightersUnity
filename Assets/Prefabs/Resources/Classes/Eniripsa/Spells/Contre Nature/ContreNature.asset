@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ContreNature
   m_EditorClassIdentifier: 
   spellName: 22
-  CoolDown: 20
-  ManaCost: 0
+  CoolDown: 60
+  ManaCost: 50
   affectedSide: 0
   baseRange: 0
   modifiableRange: 0
@@ -24,5 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5fe8e1d059a16dd42aab757d02ff1934, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 824a48daf7b55394e80e1df5048db839, type: 3}
+  description: Pendant les 12 prochaine secondes, le lanceur gagne un bonus de 100
+    points d'Intelligence mais perd 100 points de Soin

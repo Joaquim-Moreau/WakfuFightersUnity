@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Fouet
   m_EditorClassIdentifier: 
   spellName: 67
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 12
+  ManaCost: 25
   affectedSide: 2
   baseRange: 5
   modifiableRange: 0
@@ -24,5 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d7bdb5739edd2d4a87711274c1644d0, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 51dcbb3542a768b49ac5942bd2a0c8bb, type: 3}
+  description: "Fouette la cible, si c'est un ennemi inflige 50(+30% Force)(+100%
+    Intelligence) d\xE9gats physiques, si c'est un alli\xE9 augmente la vitesse d'attaque
+    de 50% pendant 4 secondes"

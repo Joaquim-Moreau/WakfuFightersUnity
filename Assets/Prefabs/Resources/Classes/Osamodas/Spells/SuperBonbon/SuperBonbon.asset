@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 68
   CoolDown: 20
-  ManaCost: 0
+  ManaCost: 40
   affectedSide: 0
   baseRange: 5
   modifiableRange: 0
@@ -25,5 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7e6b464170c0d0a4381675de674a1fb0, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 9b556ee4d2ee80a4486ef9f7d0d67294, type: 3}
+  description: "Soigne l'alli\xE9 cibl\xE9 de 70(+100% Soin) et augmente les r\xE9sistances
+    de 30 pendant 4 secondes"

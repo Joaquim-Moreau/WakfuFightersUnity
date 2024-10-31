@@ -17,4 +17,4 @@ MonoBehaviour:
   Duration: 8
   particleSystem: {fileID: 0}
   _stat: 9
-  _amount: 30
+  _amount: 15

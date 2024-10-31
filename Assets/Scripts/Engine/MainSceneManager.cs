@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 public class MainSceneManager : MonoBehaviour
 {
@@ -12,62 +11,21 @@ public class MainSceneManager : MonoBehaviour
     [SerializeField] private GameObject[] spells;
     [SerializeField] private Sprite[] sprites;
 
-    [NonSerialized] public GameObject player;
-    public static MainSceneManager instance;
-    public Camera mainCamera;
+    [NonSerialized] public static GameObject player;
     
-    [Header("Tooltip objects")]
-    public GameObject tooltipBox; 
-    public TextMeshProUGUI tooltipText;
-    public TextMeshProUGUI spellNameText;
-    public TextMeshProUGUI spellCostText;
-    
+    private Vector3 _startPosition = new Vector3(11f, 2.7f, 0f);
     
     void Awake()
     {
-        if (instance is not null && instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
-        
         player = Instantiate(classes[(int)SelectionScreenData.ChosenClass]);
-        mainCamera.transform.SetParent(player.transform);
+        player.transform.position = _startPosition;
         
         Instantiate(spells[(int)SelectionScreenData.ChosenClass]);
-        
-        Image playerSprite = transform.Find("Player Sprite").gameObject.GetComponent<Image>();
-        playerSprite.sprite = sprites[(int)SelectionScreenData.ChosenClass];
     }
-
-    private void Start()
+    
+    public static void ResetGame()
     {
-        tooltipBox.SetActive(false);
-    }
-
-    private void Update()
-    {
-        tooltipBox.transform.position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        tooltipBox.transform.position = new Vector3(tooltipBox.transform.position.x, 
-                                                    tooltipBox.transform.position .y, 0);
-    }
-
-    public void ShowTooltip(string tooltip, string nameSpell, string cost, string cooldown)
-    {
-        tooltipBox.SetActive(true);
-        tooltipText.text = tooltip;
-        spellNameText.text = nameSpell;
-        spellCostText.text = $"Cost : {cost}, CD : {cooldown}";
-    }
-
-    public void HideTooltip()
-    {
-        tooltipBox.SetActive(false);
-        tooltipText.text = String.Empty;
-        spellNameText.text = String.Empty;
-        spellCostText.text = String.Empty;
+        player.GetComponent<Player>()?.ResetCoolDowns();
+        Destroy(player);
     }
 }

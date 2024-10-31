@@ -5,12 +5,10 @@ using UnityEngine;
 public class Aura : Holder
 {
     [SerializeField] private float refreshPeriod;
-    public Side attachSide;
     
     private float _refresh;
     private bool _touchingEntity;
     private Entity _carrier;
-    
     
     public override void Init(Entity caster, Entity target)
     {
@@ -23,8 +21,7 @@ public class Aura : Holder
         StopAllCoroutines();
         StartCoroutine(ManageLifeTime());
     }
-    
-    // Update is called once per frame
+
     void Update()
     {
         if (_refresh > 0f)
@@ -45,7 +42,6 @@ public class Aura : Holder
         if (other.CompareTag("Entity") || other.CompareTag("Player"))
         {
             Entity target = other.GetComponent<Entity>();
-            //if (!CanHitEntity(target)) return;
             if (AlreadyHit.Contains(target)) return;
             ApplyEffects(target);
             AddToHit(target);

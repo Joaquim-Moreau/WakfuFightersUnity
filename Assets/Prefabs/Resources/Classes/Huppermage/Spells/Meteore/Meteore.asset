@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 47
   CoolDown: 4
-  ManaCost: 25
+  ManaCost: 20
   affectedSide: 1
-  baseRange: 6
+  baseRange: 7
   modifiableRange: 0
   targeted: 0
   Effects:
   - {fileID: 11400000, guid: 752bee6ee7bc581459efa6621a71d78d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 406984ac0d0fc2c4bbaf906048f7c43e, type: 3}
+  description: "Lance un rocher dans la direction cibl\xE9e qui inflige 45(+130%
+    Intelligence) d\xE9gats magiques au premier ennemi touch\xE9"

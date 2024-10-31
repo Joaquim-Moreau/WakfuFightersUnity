@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AffectedSide: 0
   cleanAble: 1
-  _baseHeal: 100
+  _baseHeal: 150
   _healRatio: 1

@@ -12,6 +12,7 @@ TagManager:
   - SummonsDrawer
   - MovingSpell
   - UI_spells
+  - Vision
   layers:
   - Default
   - TransparentFX

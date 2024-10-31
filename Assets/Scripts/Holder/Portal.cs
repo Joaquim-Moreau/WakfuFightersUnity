@@ -54,7 +54,6 @@ public class Portal : Spell
     
     public override void Init(Entity caster, Entity target) {}
 
-    // Update is called once per frame
     void Update()
     {
         if (_activePortal1 && _activePortal2)

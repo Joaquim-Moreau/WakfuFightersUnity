@@ -269,7 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca97f66d86c90c44951ecfd7fe58bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 86400
+  lifeTime: 60
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: f9aebd8f09b991c44a1d1ac8184cacc5, type: 2}
   triggerSide: 1
   delayBeforeButtonActive: 3
@@ -283,6 +284,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5385052291034289942}
     m_Modifications:
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: lengthInSec
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.ctime1
+      value: 1928
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.103773594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.103773594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.103773594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601506141239540749, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3377181292992421420, guid: d6806c0d8e6214d438c2b5e1723311f9, type: 3}
       propertyPath: m_Name
       value: MagicCirclePiege

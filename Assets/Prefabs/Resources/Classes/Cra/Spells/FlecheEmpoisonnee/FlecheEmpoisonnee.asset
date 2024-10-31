@@ -24,5 +24,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 8d95bcf261f259f4786a397bc66e3705, type: 3}
-  description: "Applique un poison qui inflige 50(+30% Physical Strength)(+30% Magical
-    Power) d\xE9gats magique en 3 secondes"
+  description: "Applique un poison qui inflige 50(+120% Force)(+30% Intelligence)
+    d\xE9gats magique en 6 secondes"

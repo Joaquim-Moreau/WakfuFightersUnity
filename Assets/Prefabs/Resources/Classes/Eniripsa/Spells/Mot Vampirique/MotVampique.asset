@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MotVampique
   m_EditorClassIdentifier: 
   spellName: 23
-  CoolDown: 0
-  ManaCost: 0
+  CoolDown: 6
+  ManaCost: 35
   affectedSide: 1
   baseRange: 7
   modifiableRange: 0
@@ -24,5 +24,7 @@ MonoBehaviour:
   EffectsOnCaster:
   - {fileID: 11400000, guid: d3580f731179ec34983056c70e88b6f2, type: 2}
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 44ed65856d64e0b409a0569c3587d88e, type: 3}
+  description: "Lance un projectile dans la direction cibl\xE9e, infligeant 30(+100%
+    Intelligence) d\xE9gats magiques \xE0 tous les ennemis touch\xE9s, le lanceur
+    est soign\xE9 de 20(+60% Soin) pour chaque ennemi touch\xE9"

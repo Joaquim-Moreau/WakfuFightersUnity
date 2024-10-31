@@ -15,7 +15,7 @@ MonoBehaviour:
   spellName: 139
   CoolDown: 1
   ManaCost: 0
-  affectedSide: 2
+  affectedSide: 1
   baseRange: 0
   modifiableRange: 0
   targeted: 0

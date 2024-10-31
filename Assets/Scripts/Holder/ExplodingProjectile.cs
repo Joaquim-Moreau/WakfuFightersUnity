@@ -25,7 +25,6 @@ public class ExplodingProjectile : Projectile
 
     void OnEnable()
     {
-        //transform.parent = GameObject.FindGameObjectWithTag("SpellDrawer").transform;
         _renderer.enabled = false;
         HasExploded = false;
         _refresh = 0f;

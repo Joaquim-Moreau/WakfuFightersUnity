@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf18caceeba2fe44ba20266fbaf4bfdd, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 566b53a027b113d42ab6bd799f69e84a, type: 3}
+  description: "Augmente les d\xE9gats du lanceur ou de la bombe cibl\xE9e de 30%
+    pendant 3 secondes"

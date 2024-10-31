@@ -25,4 +25,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 0f182fb2863faa7449e020de33b77e68, type: 3}
-  description: "Le lanceur gagne un bouclier et un bonus de vitesse de d\xE9placement"
+  description: "Le lanceur gagne 50(+150% Intelligence) points de bouclier pendant
+    5 secondes et un bonus de 50% de vitesse de d\xE9placement pendant 1 seconde"

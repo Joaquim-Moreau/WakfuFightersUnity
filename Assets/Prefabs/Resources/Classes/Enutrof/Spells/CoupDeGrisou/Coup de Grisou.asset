@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Coup de Grisou
   m_EditorClassIdentifier: 
   spellName: 31
-  CoolDown: 0
-  ManaCost: 0
+  CoolDown: 12
+  ManaCost: 35
   affectedSide: 1
   baseRange: 7
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef0faed3571a9ea44891c25087971463, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 8ec5b52b09d90074a83d61c1334190f9, type: 3}
+  description: "Cr\xE9\xE9 une explosion dans la zone cibl\xE9e, infligeant 50(+50%
+    Force)(+150% Intelligence) d\xE9gats magiques dans la zone"

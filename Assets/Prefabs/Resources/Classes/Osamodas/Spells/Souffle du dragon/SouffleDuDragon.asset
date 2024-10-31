@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 69
   CoolDown: 60
-  ManaCost: 0
+  ManaCost: 70
   affectedSide: 1
-  baseRange: 1
+  baseRange: 0.2
   modifiableRange: 0
   targeted: 0
   Effects:
   - {fileID: 11400000, guid: e09fa53bd7b12a54ba97e5d71d459feb, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 11be61bd5d2cc33479a71b9c109be099, type: 3}
+  description: "Crache du feu dans la direction cibl\xE9e et inflige 45(150% Force)(+150%
+    Intelligence) d\xE9gats magiques \xE0 tous les ennemis touch\xE9s"

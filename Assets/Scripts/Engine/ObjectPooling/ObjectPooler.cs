@@ -25,7 +25,6 @@ public static class ObjectPooler
     {
         if (!_spellPoolDictionary.ContainsKey(name))
         {
-            Debug.Log($"Wrong spell  : {name}");
             throw new ArgumentException("Type of spell doesn't exist");
         }
         
@@ -49,8 +48,15 @@ public static class ObjectPooler
         summonToSpawn.SetActive(true);
         summonToSpawn.transform.position = startPosition;
         summonToSpawn.transform.rotation = Quaternion.identity;
+        summonToSpawn.GetComponent<Summon>()?.OnSummon();
         
         _summonPoolDictionary[type].Enqueue(summonToSpawn);
         return summonToSpawn;
+    }
+
+    public static void Reset()
+    {
+        _spellPoolDictionary = new Dictionary<SpellName, Queue<GameObject>>();
+        _summonPoolDictionary = new Dictionary<SummonType, Queue<GameObject>>();
     }
 }

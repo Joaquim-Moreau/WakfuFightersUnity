@@ -26,7 +26,7 @@ public class InvocationPoolManager : MonoBehaviour
             for (int i = 0; i < pool.size; i++)
             {
                 GameObject obj = Instantiate(pool.prefab, transform);
-                //obj.transform.SetParent();
+          
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }

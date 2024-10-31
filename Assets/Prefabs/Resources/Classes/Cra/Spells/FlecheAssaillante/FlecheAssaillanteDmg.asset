@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: FlecheAssaillanteDmg
   m_EditorClassIdentifier: 
   AffectedSide: 1
-  Delay: 0
   cleanAble: 0
-  _baseDmg: 25
-  _phyRatio: 0.4
+  _baseDmg: 50
+  _phyRatio: 1
   _magRatio: 0
   _baseLifeSteal: 0
   _type: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8590176554752365643}
   - component: {fileID: 4696750303747941008}
   - component: {fileID: -8316754878689039902}
+  - component: {fileID: 7898894507225520497}
   m_Layer: 2
   m_Name: Griffe
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.1981132, g: 0, b: 0.17174357, a: 0.21176471}
+  m_Sprite: {fileID: 1482003691, guid: bd9273d63a12c204d91699d03a48824c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -118,7 +119,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.2, y: 1.5}
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!114 &-8316754878689039902
@@ -133,6 +134,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d618873038fadf743a8d6498f305b267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.1
+  lifeTime: 0.2
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: 0046f37a29aa2324cb3e0c5051f2b8ab, type: 2}
   refreshPeriod: 1
+--- !u!95 &7898894507225520497
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002809084523510774}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6962880a3be37c408f19aca6c578f05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

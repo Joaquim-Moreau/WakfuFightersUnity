@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlecheAssaillante
   m_EditorClassIdentifier: 
   spellName: 2
-  CoolDown: 7
+  CoolDown: 5
   ManaCost: 15
   affectedSide: 1
   baseRange: 9
@@ -24,6 +24,6 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 530bcabb1501d8148a19a77465ecac03, type: 3}
-  description: "Envoie un projectile dans la direction cibl\xE9e qui inflige 25(+40%
-    Physical Strength) d\xE9gats physiques, la prochaine fl\xE8che assaillante aura
-    des d\xE9gats suppl\xE9mentaires"
+  description: "Envoie un projectile dans la direction cibl\xE9e qui inflige 50(+100%
+    Force) d\xE9gats physiques, la prochaine fl\xE8che assaillante dans les 10 secondes
+    infligera 65(+140% Force) d\xE9gats physiques"

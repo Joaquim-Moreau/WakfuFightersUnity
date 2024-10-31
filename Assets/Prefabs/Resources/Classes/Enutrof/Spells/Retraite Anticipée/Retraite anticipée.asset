@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Retraite anticip\xE9e"
   m_EditorClassIdentifier: 
   spellName: 30
-  CoolDown: 5
+  CoolDown: 15
   ManaCost: 25
   affectedSide: 1
   baseRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0cc6cdef4661f61458ce8d28d033f2c8, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 70473aebc35d59a418783013c3c5784c, type: 3}
+  description: Ralentit tous les ennemis proches de 45% pendant 3 secondes

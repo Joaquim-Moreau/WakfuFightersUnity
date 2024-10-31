@@ -26,12 +26,12 @@ public class SummonActionManager : EntityActionManager
     
     private void Start()
     {
-        _owner = MainSceneManager.instance.player.GetComponent<Player>();
+        _owner = MainSceneManager.player.GetComponent<Player>();
     }
 
     private void Update()
     {
-        if (entityVision.visibleEntities.Any())
+        if (entityVision.visibleEntities.Any() && GetClosestEnemy() is not null)
         {
             CurrentTarget = GetClosestEnemy();
             Destination = CurrentTarget.transform.position;

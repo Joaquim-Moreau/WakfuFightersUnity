@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 46eae416c3f5eeb4ba5a82c8efd3f583, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9ea3f4686d3d7645895a6a0313de905, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: cda5931f740672b4eb184b297961addb, type: 2}
-  speed: 10
+  speed: 13
   targetLimit: 3

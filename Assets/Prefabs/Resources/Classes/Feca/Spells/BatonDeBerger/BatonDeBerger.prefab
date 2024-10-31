@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8590176554752365643}
   - component: {fileID: 4696750303747941008}
   - component: {fileID: 4698017168112760326}
+  - component: {fileID: 2315843071112112539}
   m_Layer: 2
   m_Name: BatonDeBerger
   m_TagString: MovingSpell
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.03058815, a: 1}
+  m_Sprite: {fileID: -367417828, guid: 474b7fb1bb78be344a9791e9afc8dba5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,5 +135,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0
+  delayBeforeSpawn: 0
   spellData: {fileID: 11400000, guid: e5333f23d7d39da4e8a040703fb8acab, type: 2}
   speed: 8
+--- !u!95 &2315843071112112539
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002809084523510774}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c01de2f61ab4f494898c45825ff55f49, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

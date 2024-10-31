@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: AutoDmg
   m_EditorClassIdentifier: 
   AffectedSide: 1
-  Delay: 0
   cleanAble: 0
   _baseDmg: 0
   _phyRatio: 1

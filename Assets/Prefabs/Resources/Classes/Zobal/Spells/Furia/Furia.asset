@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Furia
   m_EditorClassIdentifier: 
   spellName: 122
-  CoolDown: 8
+  CoolDown: 6
   ManaCost: 15
   affectedSide: 1
   baseRange: 2
@@ -24,6 +24,6 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 61dab0b6e506c6a43b12d9fde15b2393, type: 3}
-  description: "Inflige 50 (+100% Physical Strength) d\xE9gats physique \xE0 la cible.
-    Si le masque du Psycopathe est actif, la port\xE9e augmente et le lanceur saute
-    sur la cible"
+  description: "Inflige 50 (+120% Force) d\xE9gats physique \xE0 la cible. Si le
+    masque du Psycopathe est actif, la port\xE9e augmente et le lanceur saute sur
+    la cible"

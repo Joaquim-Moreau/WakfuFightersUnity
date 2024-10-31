@@ -22,5 +22,6 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 30263fc688ca3d44ab66e31aead074c1, type: 3}
+  description: "Invoque un tonneau, si celui ci subit des d\xE9gats il cr\xE9\xE9
+    une aura qui soigne les alli\xE9s"

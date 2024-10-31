@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Proie
   m_EditorClassIdentifier: 
   spellName: 72
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 60
+  ManaCost: 40
   affectedSide: 1
   baseRange: 5
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: daae322c4d29f7843ab984e33bed407d, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: ab0ae10529180a247b07aaa207274a82, type: 3}
+  description: "Augmente les d\xE9gats subis par la cible de 10% pendant 7 secondes"

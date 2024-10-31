@@ -357,7 +357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
-  speed: 4
+  clickable:
+    serializedVersion: 2
+    m_Bits: 9
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,8 +541,8 @@ MonoBehaviour:
   hpRegen: 10
   manaRegen: 6
   phyDmg: 80
-  pushDmg: 100
   magDmg: 80
+  Heal: 0
   LifeSteal: 0
   AttackSpeed: 0.75
   phyRes: 100
@@ -548,6 +550,7 @@ MonoBehaviour:
   moveSpeed: 4
   RangePoints: 3
   spellBook: {fileID: 0}
+  spellManager: {fileID: 0}
 --- !u!114 &62165812256914210
 MonoBehaviour:
   m_ObjectHideFlags: 0

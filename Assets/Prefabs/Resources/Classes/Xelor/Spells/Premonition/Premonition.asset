@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Premonition
   m_EditorClassIdentifier: 
   spellName: 115
-  CoolDown: 12
+  CoolDown: 15
   ManaCost: 0
   affectedSide: 2
   baseRange: 7
@@ -22,5 +22,6 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 7606b4304ca2c3243981c17b028e62fc, type: 3}
+  description: "Place une marque au sol, 5 secondes plus tard, le lanceur se t\xE9l\xE9porte
+    sur la marque"

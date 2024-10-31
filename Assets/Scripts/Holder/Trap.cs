@@ -6,7 +6,6 @@ using UnityEngine.Serialization;
 
 public class Trap : Holder
 {
-    //public float range;
     public Side triggerSide;
     [SerializeField] private float delayBeforeButtonActive;
     [SerializeField] private float activatedLifeTime;
@@ -31,7 +30,6 @@ public class Trap : Holder
         StartCoroutine(ManageLifeTime());
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (IsTriggered)

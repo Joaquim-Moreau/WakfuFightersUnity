@@ -9,7 +9,6 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Spell", menuName = "Spells")]
 public class SpellData : ScriptableObject
 {
-    // TODO : catsing time, delay, Description
     public SpellName spellName;
     public float CoolDown;
     public int ManaCost;
@@ -69,6 +68,11 @@ public class SpellData : ScriptableObject
         _cooldownTimer = CoolDown;
     }
 
+    public void NegateCoolDown()
+    {
+        _cooldownTimer = 0;
+    }
+
     public float GetCoolDownTimerPercent()
     {
         if (_cooldownTimer <= 0f)
@@ -82,11 +86,6 @@ public class SpellData : ScriptableObject
     public bool IsReady()
     {
         return _cooldownTimer <= 0f;
-    }
-
-    public bool IsCooldownUnderOne()
-    {
-        return _cooldownTimer <= 1f;
     }
 
     public bool CanSpellAffect(Entity target)

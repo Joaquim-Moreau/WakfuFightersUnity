@@ -25,5 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b4829c02aae5b7b4487bb6b3ce405bc2, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: e528250ce885f8947834a49038397e46, type: 2}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 5eb29c1ed61946c4a885cc8cd5141dc3, type: 3}
+  description: "Inflige 50(+120% Force) d\xE9gats physiques \xE0 la cible, la repousse
+    et la ralentit de 15% pendant 3 secondes, peut d\xE9clencher l'aura du tonneau"

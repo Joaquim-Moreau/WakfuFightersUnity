@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 100
   CoolDown: 55
-  ManaCost: 0
+  ManaCost: 50
   affectedSide: 1
   baseRange: 5
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 610e9e832d7c10945b7f47bac66436ea, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: e2bed1c915111944295cb7061496a9f7, type: 3}
+  description: "Lance un projectile sur la cible qui inflige 100(+300% Intelligence)
+    d\xE9gats magiques"

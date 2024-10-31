@@ -535,6 +535,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementState: 0
+  clickable:
+    serializedVersion: 2
+    m_Bits: 9
 --- !u!114 &7952180579804537578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,15 +719,19 @@ MonoBehaviour:
   hpRegen: 10
   manaRegen: 4
   phyDmg: 100
-  pushDmg: 100
   magDmg: 100
-  LifeSteal: 20
+  Heal: 0
+  LifeSteal: 10
   AttackSpeed: 1
-  phyRes: 75
-  magRes: 75
+  phyRes: 50
+  magRes: 50
   moveSpeed: 4
   RangePoints: 2
   spellBook: {fileID: 0}
+  spellManager: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
   currentMaskImage: {fileID: 2374447968757906402}
   psychopath: {fileID: 181565821, guid: 253fb4af78cd81d4c958f1d2ab409807, type: 3}
   audacious: {fileID: 75097690, guid: 253fb4af78cd81d4c958f1d2ab409807, type: 3}

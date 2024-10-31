@@ -18,11 +18,6 @@ public class Explosion : MonoBehaviour
         _renderer.enabled = true;
     }
 
-    private void OnDisable()
-    {
-        
-    }
-
     private void OnTriggerStay2D(Collider2D other)
     {
         if (projectile.HasExploded) return;

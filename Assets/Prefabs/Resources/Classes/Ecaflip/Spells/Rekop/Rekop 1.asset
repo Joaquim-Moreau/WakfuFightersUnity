@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 12
   CoolDown: 60
-  ManaCost: 0
+  ManaCost: 60
   affectedSide: 1
   baseRange: 4
   modifiableRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ea8a28335f264d8418406ddec6410b7e, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: d89f9d116be8a6e4ebfbef673c7ed736, type: 3}
+  description: "Inflige des d\xE9gats bruts al\xE9atoires \xE0 l'ennemi cibl\xE9"

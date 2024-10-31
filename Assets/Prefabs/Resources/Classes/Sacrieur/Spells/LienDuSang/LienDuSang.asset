@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LienDuSang
   m_EditorClassIdentifier: 
   spellName: 93
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 18
+  ManaCost: 40
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
@@ -22,5 +22,6 @@ MonoBehaviour:
   Effects: []
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: 22aabc8907f6b95448a06c96caa993d4, type: 2}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 6e27155448cbb0e4f8e7fa85594b92a4, type: 3}
+  description: "Lance un projectile qui attire le premier ennemi touch\xE9 puis le
+    ralentit de 40% pendant 3 secondes"

@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3c49b45403ed92f43a59e168a3e5c1f1, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 6608a920808a96d4cb599a75f8d65e98, type: 3}
+  description: "Lance une pelle sur la cible et inflige 35(+100% Intellignece) d\xE9gats
+    magiques"

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Ouragan
   m_EditorClassIdentifier: 
   spellName: 55
-  CoolDown: 3
-  ManaCost: 15
+  CoolDown: 18
+  ManaCost: 45
   affectedSide: 1
   baseRange: 6
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e6c7116ae184ee1479c5241e3a97667a, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 11400000, guid: 49f7deace6cb2034193faab471fcd6b0, type: 2}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: dc255160c38571d4fb043584b88b8cdc, type: 3}
+  description: "Lance un ouragan sur la cible, inflige 15(+60% Inelligence) d\xE9gats
+    magique et repousse la cible"

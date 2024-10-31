@@ -1,14 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : Entity
 {
     protected override void Die()
     {
-        BattleSystem.numberOfKills += 1;
-        BattleSystem.SpawnBoss();
+        BattleSystem.AddKillCount();
         base.Die();
     }
 

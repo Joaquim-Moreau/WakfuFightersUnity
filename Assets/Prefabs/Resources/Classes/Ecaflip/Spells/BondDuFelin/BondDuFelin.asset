@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: 11
   CoolDown: 12
-  ManaCost: 0
+  ManaCost: 30
   affectedSide: 2
   baseRange: 3
   modifiableRange: 0
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a2f53f355a9bf064f979b2c923914b30, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: c46be55a65cb30e44b7c89e3c0d531da, type: 3}
+  description: "Dash dans la direction cibl\xE9e et inflige des 35(+100% Force) d\xE9gats
+    physiques aux ennemis sur le chemin"

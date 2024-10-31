@@ -26,4 +26,4 @@ MonoBehaviour:
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 37de44bcb59b8174497def1957cc490b, type: 3}
   description: Le lanceur gagne un bonus de 30% de chance de coup critique et 40%
-    de vitesse d'attaque
+    de vitesse d'attaque pendant 5 secondes

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Hemorragie
   m_EditorClassIdentifier: 
   spellName: 91
-  CoolDown: 10
-  ManaCost: 0
+  CoolDown: 8
+  ManaCost: 35
   affectedSide: 2
   baseRange: 0
   modifiableRange: 0
@@ -24,5 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ed12961ce4447749a82c83d41a7b425, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: ad840569a90b33c42a63e5322c05473b, type: 3}
+  description: "Frappe en zone autour du lanceur, infligeant 100(120% Force) d\xE9gats
+    physiques et applique un poison aux ennemis touch\xE9s, infligeant 100 points
+    de d\xE9gats magiques en 3 secondes"

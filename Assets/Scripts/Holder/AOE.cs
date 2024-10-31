@@ -11,8 +11,6 @@ public class AOE : Holder
     protected float _refresh;
     protected bool _touchingEntity;
     
-    
-    
     public override void Init(Entity caster, Vector3 launchPosition)
     {
         base.Init(caster, launchPosition);
@@ -27,10 +25,9 @@ public class AOE : Holder
         StartCoroutine(ManageLifeTime());
     }
     
-    // Update is called once per frame
     void Update()
     {
-        if (!ReadyToApplyEffects) return;
+        if (!ReadyToApplyEffects) return; 
         
         if (_refresh > 0f)
         {
@@ -52,7 +49,7 @@ public class AOE : Holder
             Entity target = other.GetComponent<Entity>();
             if (!spellData.CanSpellAffect(target)) return;
             if (AlreadyHit.Contains(target)) return;
-            // 
+      
             ApplyEffects(target);
             AddToHit(target);
 

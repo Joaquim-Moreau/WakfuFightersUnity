@@ -15,4 +15,4 @@ MonoBehaviour:
   AffectedSide: 0
   cleanAble: 1
   _baseHeal: 20
-  _healRatio: 1
+  _healRatio: 0.6

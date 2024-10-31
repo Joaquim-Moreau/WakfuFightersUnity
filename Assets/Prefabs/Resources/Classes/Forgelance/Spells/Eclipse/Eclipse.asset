@@ -21,8 +21,8 @@ MonoBehaviour:
   targeted: 1
   Effects:
   - {fileID: 11400000, guid: c444b96a9b0fabc4fafe1c64de314b8f, type: 2}
-  - {fileID: 11400000, guid: 89c5873b8b782cd4f83be28658b5ff62, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: f2e4f7aa5ba13aa43a68cc9a577f6ea8, type: 3}
+  description: "Augmente la r\xE9sistance physique du lanceur de 50 points pendant
+    4 secondes"

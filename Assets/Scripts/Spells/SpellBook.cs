@@ -50,4 +50,32 @@ public class SpellBook : MonoBehaviour
         
         AutoAttack?.UpdateTimer();
     }
+
+    public void ResetCoolDowns()
+    {
+        foreach (var spellData in SpaceSpell)
+        {
+            spellData.NegateCoolDown();
+        }
+        
+        foreach (var spellData in ASpell)
+        {
+            spellData.NegateCoolDown();
+        }
+        
+        foreach (var spellData in ZSpell)
+        {
+            spellData.NegateCoolDown();
+        }
+        
+        foreach (var spellData in ESpell)
+        {
+            spellData.NegateCoolDown();
+        }
+        
+        foreach (var spellData in RSpell)
+        {
+            spellData.NegateCoolDown();
+        }
+    }
 }

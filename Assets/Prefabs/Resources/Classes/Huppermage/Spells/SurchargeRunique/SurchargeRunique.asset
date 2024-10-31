@@ -21,7 +21,9 @@ MonoBehaviour:
   targeted: 1
   Effects:
   - {fileID: 11400000, guid: 3fdaa93b8ab537c439529ae162b41e19, type: 2}
+  - {fileID: 11400000, guid: 7962f328c5ff52e4182f6c490023ae3e, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: edb6c6f1eb55f4e43a992713db705866, type: 3}
+  description: "Le lanceur gagne un bonus de 15% d\xE9gats totaux et de 20% de vitesse
+    de d\xE9placement pendant 5 secondes"

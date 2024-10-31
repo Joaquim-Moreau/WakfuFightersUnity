@@ -24,5 +24,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 0e7966e8857d9da42bd7ac9668f85ce2, type: 3}
-  description: "T\xE9l\xE9porte sur la cible et inflige 15 (+ 50% Physical strength)
-    d\xE9gats brut"
+  description: "T\xE9l\xE9porte sur la cible et inflige 15 (+ 50% Force) d\xE9gats
+    bruts"

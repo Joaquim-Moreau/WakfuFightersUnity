@@ -1,18 +1,17 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
+using System.Linq;
 
 public class EnemyActionManager : EntityActionManager
 {
+    [SerializeField] private EntityVision entityVision;
+    
     private Animator _animator;
     private NavMeshAgent _agent;
-
-    private Player _player;
-    private float _timeBeforeChangingDestination = 0f;
+    
+    private float _timeBeforeChangingDestination = 2f;
     protected override void Awake()
     {
         base.Awake();
@@ -20,21 +19,15 @@ public class EnemyActionManager : EntityActionManager
         _agent = GetComponent<NavMeshAgent>();
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
-        
         _agent.ResetPath(); 
         PathReset = true; 
     }
 
-    private void Start()
-    {
-        _player = MainSceneManager.instance.player.GetComponent<Player>();
-    }
-
     private void Update()
     {
-        if (Self.visibleToOpponent && !_player.IsInvisible())
+        if (entityVision.visibleEntities.Any() && GetClosestEnemy() is not null)
         {
-            CurrentTarget = _player;
+            CurrentTarget = GetClosestEnemy();
             Destination = CurrentTarget.transform.position;
             float distanceToTarget = Statics.GetDistance(Self, CurrentTarget);
             TryToAttack(distanceToTarget);
@@ -45,7 +38,6 @@ public class EnemyActionManager : EntityActionManager
             ChooseDestination();
             TryToWalk();
         }
-        
         _animator.SetBool("walking", movementState == MovementState.Walking);
     }
 
@@ -136,5 +128,23 @@ public class EnemyActionManager : EntityActionManager
 
         result = Vector3.zero;
         return false;
+    }
+    
+    private Entity GetClosestEnemy()
+    {
+        float distanceToClosest = 10f;
+        Entity closestEnemy = null;
+        
+        foreach (var entity in entityVision.visibleEntities)
+        {
+            float distanceToNewEntity = Statics.GetDistance(Self, entity);
+            if (distanceToNewEntity < distanceToClosest)
+            {
+                distanceToClosest = distanceToNewEntity;
+                closestEnemy = entity;
+            }
+        }
+
+        return closestEnemy;
     }
 }

@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bombe : Entity
+public class Bombe : Summon
 {
-    void OnEnable()
-    {
-        hp = maxHP;
-    }
-
     public override float TakeDmg(float damage, DmgType type)
     {
         spellManager.CastOnSelf(spellBook.AutoAttack);

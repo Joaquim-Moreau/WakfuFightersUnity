@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: Treve
   m_EditorClassIdentifier: 
   spellName: 34
-  CoolDown: 10
+  CoolDown: 25
   ManaCost: 15
   affectedSide: 2
   baseRange: 4
   modifiableRange: 0
   targeted: 1
   Effects:
-  - {fileID: 11400000, guid: 19ef40c24069854478c3399a7443ca78, type: 2}
   - {fileID: 11400000, guid: fbd7740350a815c4c9a31829e53814a2, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: c46d83f2b73aaa141bd5015819342d81, type: 3}
-  description: "Rend la cible invuln\xE9rable et pacifiste (elle ne peux plus infliger
-    de d\xE9gats) pendant 3s"
+  description: "Rend la cible pacifiste (elle ne peux plus infliger de d\xE9gats)
+    pendant 5 secondes"

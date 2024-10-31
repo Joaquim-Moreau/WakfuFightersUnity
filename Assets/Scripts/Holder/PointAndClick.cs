@@ -24,8 +24,7 @@ public class PointAndClick : Holder
         StopAllCoroutines();
         StartCoroutine(ManageLifeTime());
     }
-    
-    // Update is called once per frame
+
     void Update()
     {
         if (_refresh > 0f)

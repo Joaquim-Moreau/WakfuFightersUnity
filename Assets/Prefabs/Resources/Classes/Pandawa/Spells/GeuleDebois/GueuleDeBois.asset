@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GueuleDeBois
   m_EditorClassIdentifier: 
   spellName: 81
-  CoolDown: 15
+  CoolDown: 18
   ManaCost: 60
   affectedSide: 1
   baseRange: 6
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78f602393e5974e4c8e2eb2227e01247, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 718341c7434289d40a56db4e92e68128, type: 3}
+  description: "Augmente les d\xE9gats subis par la cible de 15% pendant 3 secondes"

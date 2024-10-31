@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -234,21 +234,22 @@ MonoBehaviour:
   side: 0
   visibleToOpponent: 0
   <ShieldPoints>k__BackingField: 0
-  <maxHP>k__BackingField: 1000
+  <maxHP>k__BackingField: 300
   <hp>k__BackingField: 0
   <maxMana>k__BackingField: 180
-  hpRegen: 6
-  manaRegen: 6
+  hpRegen: 0
+  manaRegen: 0
   phyDmg: 0
-  pushDmg: 0
   magDmg: 0
+  Heal: 0
   LifeSteal: 0
   AttackSpeed: 1
-  phyRes: 0
+  phyRes: 100
   magRes: 0
   moveSpeed: 0
   RangePoints: 0
   spellBook: {fileID: 0}
+  spellManager: {fileID: 0}
 --- !u!1 &9209212253690655861
 GameObject:
   m_ObjectHideFlags: 0

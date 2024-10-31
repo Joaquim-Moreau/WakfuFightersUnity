@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Surchauffe
   m_EditorClassIdentifier: 
   spellName: 110
-  CoolDown: 6
+  CoolDown: 4
   ManaCost: 20
   affectedSide: 1
   baseRange: 8
@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b8dedfbcc6b46864d8007f572aeb7247, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: 1805c7a5731cf58419423846ac8fd5b2, type: 3}
+  description: "Lance un projectile dans la direction cibl\xE9e, celui-ci explose
+    au contact d'un ennemi et inflige 50(+100%) d\xE9gats magiques"

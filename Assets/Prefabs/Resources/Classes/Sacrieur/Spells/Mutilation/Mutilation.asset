@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mutilation
   m_EditorClassIdentifier: 
   spellName: 90
-  CoolDown: 8
+  CoolDown: 16
   ManaCost: 20
   affectedSide: 0
   baseRange: 0
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 33a8d1cf7ae0ac3469b904ca0c81e702, type: 2}
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
-  spellIcon: {fileID: 0}
-  description: 
+  spellIcon: {fileID: 21300000, guid: aed999898bf944544a822ad45f75b186, type: 3}
+  description: Augmente la force du lanceur de 35 pendant 4 secondes

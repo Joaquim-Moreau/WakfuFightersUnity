@@ -24,5 +24,5 @@ MonoBehaviour:
   EffectsOnCaster: []
   PushEffect: {fileID: 0}
   spellIcon: {fileID: 21300000, guid: 2a5c892bdd014164da633b8c6fd0f246, type: 3}
-  description: "Inflige 150(+200% Physical Strength)(+50% Magical Power) d\xE9gats
-    physiques \xE0 l'ennemi cibl\xE9."
+  description: "Inflige 150(+250% Force)(+50% Intelligence) d\xE9gats bruts \xE0
+    l'ennemi cibl\xE9."
